@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>login/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- SpringMVC 请求分发器 -->
+  <servlet>
+      <servlet-name>dispatcherServlet</servlet-name>
+      <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+      <init-param>
+          <param-name>contextConfigLocation</param-name>
+          <param-value>classpath:spring-mvc.xml</param-value>
+      </init-param>
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+
+<!-- 但是你可爱的Web 容器并不知道，你到底要干嘛？解析的是个What.所以你需要在web中注册一下：-->
+
+ <!--   <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>-->
+
+    <!-- 监听器:在servlet容器启动时,就初始化bean工厂,对bean进行初始化等等操作。
+    context-param指定了spring的配置文件spring.xml
+    -->
+  <listener>
+      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring-mybatis.xml</param-value>
+  </context-param>
+  
+  <!-- POST请求提交数据:指定编码utf8 -->
+   <filter>
+      <filter-name>encode</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+     <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf8</param-value>
+    </init-param>
+    </filter>
+    <filter-mapping>
+      <filter-name>encode</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+  
+  <!-- session监听器的配置 -->
+<!--  <listener>
+    <listener-class>com.dangdang.listener.CreateSessionListener</listener-class>
+  </listener>
+  -->
+</web-app>

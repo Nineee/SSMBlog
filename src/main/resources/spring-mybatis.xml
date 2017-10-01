@@ -1,0 +1,111 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:p="http://www.springframework.org/schema/p"
+               xmlns:context="http://www.springframework.org/schema/context"
+               xmlns:aop="http://www.springframework.org/schema/aop"
+               xmlns:tx="http://www.springframework.org/schema/tx"
+
+               xsi:schemaLocation=
+                       "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd
+   http://www.springframework.org/schema/aop
+   http://www.springframework.org/schema/aop/spring-aop.xsd
+   http://www.springframework.org/schema/tx
+   http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+  <!--1 自动扫描 将标注Spring注解的类自动转化Bean-->
+  <context:component-scan base-package="Service,Dao" />
+  <!-- 加载外部属性文件 -->
+<context:property-placeholder location="classpath:db.properties"/>
+<!--   配置数据源:DriverManagerDataSource,底层对JDBC封装,和C3P0类似 -->
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+  <property name="driverClassName" value="${jdbc.driverClass}"></property>
+  <property name="url" value="${jdbc.url}"></property>
+  <property name="username" value="${jdbc.username}"></property>
+  <property name="password" value="${jdbc.pwd}"></property>
+</bean>
+
+
+
+
+<!-- redis配置 -->
+<!--    <context:property-placeholder location="redis.properties" />
+
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxTotal" value="${redis.maxTotal}" />
+        <property name="maxIdle" value="${redis.maxIdle}" />
+        <property name="maxWaitMillis" value="${redis.maxWait}" />
+        <property name="testOnBorrow" value="${redis.testOnBorrow}" />
+    </bean>
+
+    redis的连接池pool，不是必选项：timeout/password
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
+        <constructor-arg index="0" ref="jedisPoolConfig" />
+        <constructor-arg index="1" value="${redis.host}" />
+        <constructor-arg index="2" value="${redis.port}" type="int" />
+        <constructor-arg index="3" value="60000" type="int" />
+    </bean>
+
+
+
+    redis操作模板，这里采用尽量面向对象的模板
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+        <property name="connectionFactory" ref="connectionFactory" />
+        如果不配置Serializer，那么存储的时候只能使用String，如果用对象类型存储，那么会提示错误 can't cast to String！！！
+        <property name="keySerializer">
+            <bean class="org.springframework.data.redis.serializer.StringRedisSerializer" />
+        </property>
+        <property name="valueSerializer">
+            <bean class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer" />
+        </property>
+    </bean>  -->
+
+
+
+
+
+<!-- MyBatis3.x框架配置
+       1.配置SqlSessionFactory
+       2.配置MyBatis自动扫描加载SQL的映射器:MapperScannerConfigurer
+-->
+
+  <!-- 4   配置sessionfactory -->
+  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="dataSource" />
+    <!-- 自动扫描mapping.xml文件 -->
+    <property name="mapperLocations" value="classpath:mappers/*Mapper.xml"></property>
+  </bean>
+  <!-- 5  装配dao接口 -->
+  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="basePackage" value="Dao"/> <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+  </bean>
+
+
+  <!-- 事物配置 -->
+<!-- 1.配置事物管理器  -->
+<bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+  <!-- 指定数据源 -->
+  <property name="dataSource" ref="dataSource"/>
+</bean>
+
+<!-- 2.配置增强切面 -->
+<tx:advice id="txAdvice" transaction-manager="tx">
+  <tx:attributes>
+    <tx:method name="*"/>
+  </tx:attributes>
+</tx:advice>
+
+<!-- 3.配置AOP -->
+<aop:config>
+  <!-- 配置切点表达式 -->
+  <aop:pointcut expression="execution(* java.Service.*.*(..))" id="pointcut"/>
+  <!-- 配置增强切面 -->
+  <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" order="1"/>
+</aop:config>
+
+
+</beans>
