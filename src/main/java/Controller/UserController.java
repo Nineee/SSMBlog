@@ -23,7 +23,7 @@ public class UserController {
             String password= user.getPassword();
             User u = userService.findPwdByUsername(user.getUsername());
             if (u.getPassword().equals(password)){
-                    return "redirect:/index.jsp";
+                return "redirect:/main/index.html";
                }
                return "redirect:/index.jsp";
             }
