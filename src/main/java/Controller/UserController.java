@@ -18,14 +18,14 @@ public class UserController {
     private UserService userService;
     @RequestMapping(value = "/login")
     public String login(User user, HttpServletResponse response){
-        System.out.println(user);
+        System.out.println("前台提交的数据："+user);
         response.setCharacterEncoding("UTF-8");
             String password= user.getPassword();
             User u = userService.findPwdByUsername(user.getUsername());
             if (u.getPassword().equals(password)){
-                return "redirect:/main/index.html";
+                return "redirect:/main/main.jsp";
                }
-               return "redirect:/index.jsp";
+               return "redirect:/login/login.jsp";
             }
     }
 

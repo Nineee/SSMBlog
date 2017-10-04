@@ -8,12 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>ShareFree.login</title>
+    <title>ShareFree</title>
     <link rel="stylesheet" type="text/css" href="login/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="login/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="login/css/component.css" />
     <script src="login/js/html5.js"></script>
 </head>
+<%--点击登录按钮发送请求--%>
 <script type="text/javascript">
     function login() {
         var loginform=document.getElementById("login_form");
