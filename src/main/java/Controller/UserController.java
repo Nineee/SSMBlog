@@ -16,6 +16,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    /*登录功能实现*/
     @RequestMapping(value = "/login")
     public String login(User user, HttpServletResponse response){
         System.out.println("前台提交的数据："+user);

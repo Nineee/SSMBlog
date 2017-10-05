@@ -1,6 +1,7 @@
 package Bean;
 
 import java.util.Date;
+import java.util.List;
 
 public class Articles {
 
@@ -11,6 +12,8 @@ public class Articles {
     private String tag;
     private String comment;
     private Date date;
+    public Articles() {
+    }
 
     public Articles(int id, String title, String author, String catalog, String tag, String comment, Date date) {
         this.id = id;
@@ -22,8 +25,6 @@ public class Articles {
         this.date = date;
     }
 
-    public Articles() {
-    }
 
     public int getId() {
         return id;
@@ -80,6 +81,7 @@ public class Articles {
     public void setDate(Date date) {
         this.date = date;
     }
+
 
     @Override
     public String toString() {

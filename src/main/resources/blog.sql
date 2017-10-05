@@ -8,6 +8,9 @@ CREATE TABLE `blog_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `blog_user` (`username`,`password`)
+    VALUES (`123@qq.com`,`123`);
+
 /*文章列表*/
 DROP TABLE IF EXISTS `blog_articles`;
 CREATE TABLE `blog_articles` (
@@ -22,7 +25,7 @@ CREATE TABLE `blog_articles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `blog_articles` (`title`,`author`,`catalog`,`tag`,`comment`,`date`)
-VALUES ('zabbix','nine','运维','监控','还不错哦','2017-10-03'),
+ VALUES ('zabbix','nine','运维','监控','还不错哦','2017-10-03'),
   ('python','nine','运维开发','python','还不错哦','2017-10-03'),
   ('java','nine','开发','java','还不错哦','2017-10-03'),
   ('Linux','nine','运维','Linux','还不错哦','2017-10-03');

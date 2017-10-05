@@ -3,8 +3,17 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="Dao.ArticlesDao">
-
-    <select id="findPwdByUsername">
+    <resultMap id="articlesList" type="Bean.Articles">
+        <id property="uid" column="uid"></id>
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="author" column="author"></result>
+        <result property="catalog" column="catalog"></result>
+        <result property="tag" column="tag"></result>
+        <result property="comment" column="comment"></result>
+        <result property="date" column="date"></result>
+    </resultMap>
+    <select id="findAllArticles" resultMap="articlesList">
         SELECT id,title,author,catalog,tag,comment,date FROM blog_articles limit 0,3;
     </select>
 

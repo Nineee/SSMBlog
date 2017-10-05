@@ -1,21 +1,37 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="gb2312">
     <title>www.Sharefree.co</title>
     <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="/jquery-3.2.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="js/modernizr.js"></script>
     <![endif]-->
 </head>
 <%--预加载网页文章--%>
 <script type="text/javascript">
-   window.onload=function () {
-       var article = document.getElementById("article");
-       article.action="/load.do";
-       article.submit();
-   }
+/*  $(function() {
+      var article = document.getElementById("article");
+      article.action="/load.do";
+      article.submit();
+  })*/
 
+ $(function() {
+     $.ajax({
+         type: "POST",
+         dataType: "JSON",
+         url: '${contextPath}/load.do',
+         success: function (data) {
+             $.each(data.roomList,function(i,item){
+                 console.info(item.id);
+                 console.info(item.id);
+                 console.info(item.name);
+             });
+             }
+         });
+     });
 </script>
 <body>
 <header>
@@ -94,22 +110,25 @@
             </ul>
         </section>
     </aside>
-    <div class="blogitem">
-
-        <article>
-            <h2 class="title"><a href="/" >${article.title}</a></h2>
+    <div class="blogitem" >
+<%--            <form id="article" type="post">
+            <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
+            <article>
+            <h2 class="title"><a href="/" >文章标题</a></h2>
+                <span id="testx" style="color:red"></span>
             <ul class="text">
                 <p>“陌上花开，可缓缓归矣。” 含义：（夫人），田间阡陌上的花开了，你可以一边赏花，一边慢慢地回来。</p>
                 <p class="textimg"><img src="images/text02.jpg"></p>
             </ul>
-            <form  id="article" name="article" action="/load.do" method="post">
-            <div class="textfoot">
-                <a href="/">阅读全文</a><a href="/">${article.comment}</a><a href="/">转载</a>
-            </div>
-            </form>
-        </article>
 
+            <div class="textfoot">
+                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
+            </div>
+            </article>
+<%--            </c:forEach>
+            </form>--%>
         <article>
+
             <h2 class="title"><a href="/">岁月留痕――我的2010</a></h2>
             <ul class="text">
                 <p>A面――岁月留痕之时光</p>
