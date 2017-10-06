@@ -4,6 +4,7 @@
 
 <mapper namespace="Dao.UserDao">
 
+  <!--用户登录验证-->
   <select id="findPwdByUsername" parameterType="String" resultType="Bean.User">
     SELECT id,username,password FROM blog_user where username=#{username};
   </select>

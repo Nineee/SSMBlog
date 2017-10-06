@@ -1,5 +1,6 @@
 package Controller;
 
+import Bean.ArticlePage;
 import Bean.Articles;
 import Service.ArticlesService;
 import org.junit.Test;
@@ -25,7 +26,7 @@ public class ArticlesController {
     /*主页预加载实现*/
     @RequestMapping(value = "/load")
     @ResponseBody
-    public List<Articles> showArticle(HttpServletRequest request, HttpServletResponse response){
+    public List<Articles> showArticle(){
         /*modeladnview返回list集合
         response.setCharacterEncoding("UTF-8");
         ModelAndView mav = new ModelAndView("forward:/main/main");
@@ -35,10 +36,21 @@ public class ArticlesController {
         return mav;
         */
 
-        //
+        //ajax返回list集合
         List<Articles> allArticles = articlesService.findAllArticles();
-        System.out.println("文章列表："+allArticles);
+       /* System.out.println("文章列表："+allArticles);*/
         return allArticles;
-
     }
+
+    /*根据文章页数显示文章*/
+    @RequestMapping(value = "page")
+    @ResponseBody
+    public  List<Articles> showPage(Integer pagenum){
+        System.out.println("前台提交的页数为："+pagenum);
+        ArticlePage articlePage = new ArticlePage((pagenum-1)*2,2);
+        System.out.println("articlePage属性："+articlePage);
+        List<Articles> articlesByPageNum = articlesService.findArticlesByPageNum(articlePage);
+        return articlesByPageNum;
+    }
+
 }

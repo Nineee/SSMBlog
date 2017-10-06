@@ -1,5 +1,6 @@
 package Bean;
 
+/*文章属性类*/
 import java.util.Date;
 import java.util.List;
 
@@ -8,6 +9,7 @@ public class Articles {
     private int id;
     private String title;
     private String author;
+    private String content;
     private String catalog;
     private String tag;
     private String comment;
@@ -15,9 +17,10 @@ public class Articles {
     public Articles() {
     }
 
-    public Articles(int id, String title, String author, String catalog, String tag, String comment, Date date) {
+    public Articles(int id, String title, String content,String author, String catalog, String tag, String comment, Date date) {
         this.id = id;
         this.title = title;
+        this.content = content;
         this.author = author;
         this.catalog = catalog;
         this.tag = tag;
@@ -40,6 +43,14 @@ public class Articles {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getAuthor() {
@@ -89,6 +100,7 @@ public class Articles {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
+                ", content='" + content + '\'' +
                 ", catalog='" + catalog + '\'' +
                 ", tag='" + tag + '\'' +
                 ", comment='" + comment + '\'' +

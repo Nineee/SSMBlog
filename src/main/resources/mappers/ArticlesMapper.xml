@@ -13,8 +13,15 @@
         <result property="comment" column="comment"></result>
         <result property="date" column="date"></result>
     </resultMap>
+
+    <!--/*主页预加载查找文章*/-->
     <select id="findAllArticles" resultMap="articlesList">
-        SELECT id,title,author,catalog,tag,comment,date FROM blog_articles limit 0,3;
+        SELECT id,title,content,author,catalog,tag,comment,date FROM blog_articles limit 0,2;
+    </select>
+
+    <!--根据文章页数显示文章-->
+    <select id="findArticlesByPageNum" parameterType="Bean.ArticlePage" resultMap="articlesList">
+        SELECT id,title,content,author,catalog,tag,comment,date FROM blog_articles limit #{minpage},#{maxpage};
     </select>
 
 </mapper>

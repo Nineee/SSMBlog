@@ -1,5 +1,6 @@
 package Bean;
 
+/*用户属性类*/
 public class User {
 
     private int id;

@@ -10,29 +10,100 @@
     <script src="js/modernizr.js"></script>
     <![endif]-->
 </head>
-<%--预加载网页文章--%>
+
 <script type="text/javascript">
 /*  $(function() {
       var article = document.getElementById("article");
       article.action="/load.do";
       article.submit();
   })*/
-
+<%--预加载网页文章--%>
  $(function() {
      $.ajax({
          type: "POST",
          dataType: "JSON",
          url: '${contextPath}/load.do',
          success: function (data) {
-             $.each(data.roomList,function(i,item){
-                 console.info(item.id);
-                 console.info(item.id);
-                 console.info(item.name);
-             });
+             console.info(data)
+             var json = eval(data);
+             $.each(json,function (index,item) {
+                     $("#title1").html(json[0].title);
+                     $("#content1").html(json[0].content);
+                    $("#title2").html(json[1].title);
+                    $("#content2").html(json[1].content);
+             })
              }
          });
      });
+
+    function pagenum1(){
+        var page1 = parseInt(document.getElementById("page1").innerHTML);
+            alert(page1)
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                data:{
+                    "pagenum":document.getElementById("page1").innerHTML
+                },
+                url: '${contextPath}/page.do',
+                success: function (data) {
+                    var json = eval(data);
+                    $.each(json,function (index,item) {
+                        $("#title1").html(json[0].title);
+                        $("#content1").html(json[0].content);
+                        $("#title2").html(json[1].title);
+                        $("#content2").html(json[1].content);
+                    })
+                }
+            })
+        }
+    function pagenum2(){
+        var  page2 = parseInt(document.getElementById("page2").innerHTML);
+        alert(page2)
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                data:{
+                    "pagenum":document.getElementById("page2").innerHTML
+                },
+                url: '${contextPath}/page.do',
+                success: function (data) {
+                    var json = eval(data);
+                    $.each(json,function (index,item) {
+                        $("#title1").html(json[0].title);
+                        $("#content1").html(json[0].content);
+                        $("#title2").html(json[1].title);
+                        $("#content2").html(json[1].content);
+                    })
+                }
+            })
+        }
+
+    function pagenum3(){
+        var  page3 = document.getElementById("page3").innerHTML.toString();
+        alert(page3)
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                data:{
+                    "pagenum":document.getElementById("page3").innerHTML
+                },
+                url: '${contextPath}/page.do',
+                success: function (data) {
+                    var json = eval(data);
+                    console.info(json)
+                    $.each(json,function (index,item) {
+                        $("#title1").html(json[0].title);
+                        $("#content1").html(json[0].content);
+                        $("#title2").html(json[1].title);
+                        $("#content2").html(json[1].content);
+                    })
+                }
+            })
+        }
 </script>
+
+
 <body>
 <header>
     <nav id="nav">
@@ -114,10 +185,9 @@
 <%--            <form id="article" type="post">
             <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
             <article>
-            <h2 class="title"><a href="/" >文章标题</a></h2>
-                <span id="testx" style="color:red"></span>
+            <h2 class="title"><a id="title1" href="/" ></a></h2>
             <ul class="text">
-                <p>“陌上花开，可缓缓归矣。” 含义：（夫人），田间阡陌上的花开了，你可以一边赏花，一边慢慢地回来。</p>
+                <p id="content1"></p>
                 <p class="textimg"><img src="images/text02.jpg"></p>
             </ul>
 
@@ -129,23 +199,20 @@
             </form>--%>
         <article>
 
-            <h2 class="title"><a href="/">岁月留痕――我的2010</a></h2>
+            <h2 class="title"><a id="title2" href="/"></a></h2>
             <ul class="text">
-                <p>A面――岁月留痕之时光</p>
-                <p>每逢新旧年交替时候，我就被笼罩在一股茫然的思绪里，逃也逃不脱，避也避不开，唯有让心事在静静流逝的时光里苍茫成河。</p>
-                <p>
-                    是从什么时候开始的呢，我又变得如此感时伤怀？我很羡慕那些在年终盘点总结的人们，过去的一年于他们来说，是大刀阔斧的一年，是硕果累累的一年。再不济的话，也是豪情万丈的一年。而在我那逝去的时光里，平静如水，不起一丝波澜，一年又一年。我没有盘点，因为我没有波澜壮阔；我不会去总结，因为我的总结从来就没有逼近我的心灵。我知道这于我来说，显得多么无厘头。</p>
+                <p id="content2"></p>
                 <p class="textimg"><img src="images/text01.jpg"></p>
-                <p>
-                    我喜欢这样安静地坐下来，想一些似有若无的心事。尽量不去想那些飞逝的时光，尽量不去想那些形色匆忙的脚步，似乎是在害怕，在这高速运转的时空里，自己有一天会化作一堆虚无。还记得那一部《岁月神偷》的电影吗？真是要感谢来自香港的导演罗启锐，影片给我们芸芸众生留下太多的唏嘘。在如水一般逝去的时光里，皱纹爬上你的眼角，白发蔓延我的双鬓。岁月才是最好的神偷，偷走了我的青春和你的美好。</p>
-                <p>就任这时光慢慢流淌吧，对于大多数人来说，我们无非就是浩瀚时空的一些微尘。虎年走了又怎样</p>
             </ul>
             <div class="textfoot">
                 <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
             </div>
         </article>
-        <div class="pages"><span>1</span><a href="/" hidefocus="">2</a><a href="/" hidefocus="">3</a><a href="/"
-                                                                                                        class="next">下一页&gt;&gt;</a>
+        <div class="pages">
+            <a href=""  hidefocus="" onclick="pagenum1()" id="page1" >1</a>
+            <a href="" hidefocus="" onclick="pagenum2()" id="page2">2</a>
+            <a href="" hidefocus="" onclick="pagenum3()" id="page3">3</a>
+            <a href="${pageContext.request.contextPath}/nextpage.do"class="next">下一页&gt;&gt;</a>
         </div>
     </div>
 </div>
@@ -155,7 +222,7 @@
         <ul class="footinfo">
             <p class="fname"><a href="/dancesmile">青轻飞扬</a></p>
             <p class="finfo">性别：女 年龄：25岁</p>
-            <p>现居：四川成都</p></ul>
+            <p>现居：人们心中的'魔都'</p></ul>
     </div>
     <section class="visitor">
         <h2>最近访客</h2>
