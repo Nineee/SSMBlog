@@ -23,7 +23,7 @@ public class ArticlesController {
 
     @Autowired
     private ArticlesService articlesService;
-    /*主页预加载实现*/
+    /*主页预加载显示文章*/
     @RequestMapping(value = "/load")
     @ResponseBody
     public List<Articles> showArticle(){
@@ -45,10 +45,9 @@ public class ArticlesController {
     /*根据文章页数显示文章*/
     @RequestMapping(value = "page")
     @ResponseBody
-    public  List<Articles> showPage(Integer pagenum){
+    public  List<Articles> showPageNum(int pagenum){
         System.out.println("前台提交的页数为："+pagenum);
         ArticlePage articlePage = new ArticlePage((pagenum-1)*2,2);
-        System.out.println("articlePage属性："+articlePage);
         List<Articles> articlesByPageNum = articlesService.findArticlesByPageNum(articlePage);
         return articlesByPageNum;
     }

@@ -1,6 +1,7 @@
+@charset "gb2312";
 /* CSS Document */
-* {margin: 0;padding: 0;}
-body { font: 12px "å®‹ä½“", "Arial Narrow", HELVETICA; color: #3F3E3C; line-height: 1.5; background: url(../images/bg.png) no-repeat top center #96CEB4 }
+* { margin: 0; padding: 0 }
+body { font: 12px "宋体", "Arial Narrow", HELVETICA; color: #3F3E3C; line-height: 1.5; background: url(../images/bg.png) no-repeat top center #96CEB4 }
 img { border: 0; vertical-align: middle }
 p { display: block; }
 ul { list-style: none; }
@@ -135,8 +136,8 @@ transform:translateX(0)
 }
 }
 /* mainContent2 */
-.mainContent2 {background: #C0E3CF;width: 1400px;margin: 20px auto;overflow: hidden;}
-aside {width: 270px;float: left;}
+.mainContent2 {background: #C0E3CF;width: 1250px;margin: 20px auto;overflow: hidden;}
+aside { width: 270px; float: left; }
 .avatar { margin: 20px auto; width: 160px; height: 160px; border-radius: 160px; -moz-border-radius: 160px; -webkit-border-radius: 160px; overflow: hidden; }
 .avatar a { display: block; padding-top: 97px; width: 160px; height: 63px; background: url(../images/s8.jpg) no-repeat; background-size: 160px 160px }
 .avatar a span { display: block; margin-top: 63px; padding-top: 8px; width: 160px; height: 55px; text-align: center; font-size: 16px; line-height: 20px; color: #fff; background: rgba(0, 0, 0, .5); -webkit-transition: margin-top .2s ease-in-out; -moz-transition: margin-top .2s ease-in-out; -o-transition: margin-top .2s ease-in-out; transition: margin-top .2s ease-in-out; }
@@ -157,9 +158,9 @@ aside section h2 { background: #299982; color: #FFF; padding-left: 30px; height:
 .newpic ul li img:hover { opacity: 0.5 }
 .taglist ul li a { padding: 2px 5px; display: inline-block; float: left; margin-right: 5px; color: #454545; }
 .taglist ul li a:hover { background: #299982; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px }
-.blogitem {width: 1128px;background: rgba(255,255,255,0.7);float: right;}
+.blogitem {width: 960px;background: rgba(255,255,255,0.7);float: right;}
 .blogitem article { border-bottom: #C0E3CF 40px solid; }
-.title {background: url(../images/titlebg.png) no-repeat 5% 80%;font-size: 20px;line-height: 28px;display: inline-block;padding: 38px 0px 8px 80px;border-bottom: 1px solid #e2e2e2;width: 100%;}
+.title { background: url(../images/titlebg.png) no-repeat 2% 80%; font-size: 20px; line-height: 28px; display: inline-block; padding: 38px 60px 8px 60px; border-bottom: 1px solid #e2e2e2; width: 100%; }
 .title a { color: #454545; }
 .title a:hover { padding: 20px }
 .text { font-size: 14px; padding: 20px 40px; }

@@ -10,113 +10,21 @@
     <script src="js/modernizr.js"></script>
     <![endif]-->
 </head>
-
-<script type="text/javascript">
-/*  $(function() {
-      var article = document.getElementById("article");
-      article.action="/load.do";
-      article.submit();
-  })*/
-<%--预加载网页文章--%>
- $(function() {
-     $.ajax({
-         type: "POST",
-         dataType: "JSON",
-         url: '${contextPath}/load.do',
-         success: function (data) {
-             console.info(data)
-             var json = eval(data);
-             $.each(json,function (index,item) {
-                     $("#title1").html(json[0].title);
-                     $("#content1").html(json[0].content);
-                    $("#title2").html(json[1].title);
-                    $("#content2").html(json[1].content);
-             })
-             }
-         });
-     });
-
-    function pagenum1(){
-        var page1 = parseInt(document.getElementById("page1").innerHTML);
-            alert(page1)
-            $.ajax({
-                type: "POST",
-                dataType: "JSON",
-                data:{
-                    "pagenum":document.getElementById("page1").innerHTML
-                },
-                url: '${contextPath}/page.do',
-                success: function (data) {
-                    var json = eval(data);
-                    $.each(json,function (index,item) {
-                        $("#title1").html(json[0].title);
-                        $("#content1").html(json[0].content);
-                        $("#title2").html(json[1].title);
-                        $("#content2").html(json[1].content);
-                    })
-                }
-            })
-        }
-    function pagenum2(){
-        var  page2 = parseInt(document.getElementById("page2").innerHTML);
-        alert(page2)
-            $.ajax({
-                type: "POST",
-                dataType: "JSON",
-                data:{
-                    "pagenum":document.getElementById("page2").innerHTML
-                },
-                url: '${contextPath}/page.do',
-                success: function (data) {
-                    var json = eval(data);
-                    $.each(json,function (index,item) {
-                        $("#title1").html(json[0].title);
-                        $("#content1").html(json[0].content);
-                        $("#title2").html(json[1].title);
-                        $("#content2").html(json[1].content);
-                    })
-                }
-            })
-        }
-
-    function pagenum3(){
-        var  page3 = document.getElementById("page3").innerHTML.toString();
-        alert(page3)
-            $.ajax({
-                type: "POST",
-                dataType: "JSON",
-                data:{
-                    "pagenum":document.getElementById("page3").innerHTML
-                },
-                url: '${contextPath}/page.do',
-                success: function (data) {
-                    var json = eval(data);
-                    console.info(json)
-                    $.each(json,function (index,item) {
-                        $("#title1").html(json[0].title);
-                        $("#content1").html(json[0].content);
-                        $("#title2").html(json[1].title);
-                        $("#content2").html(json[1].content);
-                    })
-                }
-            })
-        }
-</script>
-
-
+<%--主页交互JS--%>
+<script type="text/javascript" src="js/main.js"></script>
 <body>
 <header>
     <nav id="nav">
         <ul>
             <li><a href="/">ShareFree</a></li>
-            <li><a href="/download/" target="_blank">模板</a></li>
-            <li><a href="/web/" target="_blank">关于我们</a></li>
-            <li><a href="/jstt/" target="_blank">我们的故事</a></li>
-            <li><a href="/newshtml5/" target="_blank">我们的蜜月</a></li>
-            <li><a href="/news/case/" target="_blank">婚礼现场</a></li>
-            <li><a href="/news/s/" target="_blank">婚纱摄影</a></li>
-            <li><a href="/newstalk/" target="_blank">我们的博客</a></li>
-            <li><a href="/news/jsex/" target="_blank">Contact m</a></li>
+            <li><a href="/download/" target="_blank" id="catalog1"></a></li>
+            <li><a href="/web/" target="_blank" id="catalog2"></a></li>
+            <li><a href="/jstt/" target="_blank" id="catalog3"></a></li>
+            <li><a href="/newshtml5/" target="_blank" id="catalog4"></a></li>
+            <li><a href="/news/case/" target="_blank" id="catalog5"></a></li>
+            <li><a href="/news/s/" target="_blank" id="catalog6"></a></li>
+            <li><a href="/newstalk/" target="_blank" id="catalog7"></a></li>
+            <li><a href="/news/jsex/" target="_blank">Connect Me</a></li>
         </ul>
         <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
     </nav>
@@ -192,7 +100,7 @@
             </ul>
 
             <div class="textfoot">
-                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
+                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num1"></a>
             </div>
             </article>
 <%--            </c:forEach>
@@ -205,14 +113,14 @@
                 <p class="textimg"><img src="images/text01.jpg"></p>
             </ul>
             <div class="textfoot">
-                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a>
+                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num2"></a>
             </div>
         </article>
         <div class="pages">
-            <a href=""  hidefocus="" onclick="pagenum1()" id="page1" >1</a>
-            <a href="" hidefocus="" onclick="pagenum2()" id="page2">2</a>
-            <a href="" hidefocus="" onclick="pagenum3()" id="page3">3</a>
-            <a href="${pageContext.request.contextPath}/nextpage.do"class="next">下一页&gt;&gt;</a>
+            <a hidefocus="" onclick="pagenum1()" id="page1" >1</a>
+            <a hidefocus="" onclick="pagenum2()" id="page2">2</a>
+            <a hidefocus="" onclick="pagenum3()" id="page3">3</a>
+            <a class="next" onclick="nextpage()">下一页&gt;&gt;</a>
         </div>
     </div>
 </div>

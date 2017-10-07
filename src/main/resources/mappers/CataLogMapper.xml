@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Dao.CataLogDao">
+    <resultMap id="cataLogList" type="Bean.CataLog">
+        <id property="uid" column="uid"></id>
+        <result property="id" column="id"></result>
+        <result property="cataName" column="cataName"></result>
+    </resultMap>
+
+    <!--/*主页预加载查找所有目录*/-->
+    <select id="findAllCataLog" resultMap="cataLogList">
+        SELECT id,cataName FROM blog_catalog;
+    </select>
+</mapper>
