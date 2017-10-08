@@ -27,18 +27,8 @@ public class ArticlesController {
     @RequestMapping(value = "/load")
     @ResponseBody
     public List<Articles> showArticle(){
-        /*modeladnview返回list集合
-        response.setCharacterEncoding("UTF-8");
-        ModelAndView mav = new ModelAndView("forward:/main/main");
-        List<Articles> allArticles = articlesService.findAllArticles();
-        System.out.println("文章列表："+allArticles);
-        mav.addObject("allArticles",allArticles);
-        return mav;
-        */
-
         //ajax返回list集合
         List<Articles> allArticles = articlesService.findAllArticles();
-       /* System.out.println("文章列表："+allArticles);*/
         return allArticles;
     }
 
@@ -47,9 +37,19 @@ public class ArticlesController {
     @ResponseBody
     public  List<Articles> showPageNum(int pagenum){
         System.out.println("前台提交的页数为："+pagenum);
-        ArticlePage articlePage = new ArticlePage((pagenum-1)*2,2);
+        ArticlePage articlePage = new ArticlePage((pagenum-1)*2,2); //设置文章页数属性(与limit(1,3)类似对应)
         List<Articles> articlesByPageNum = articlesService.findArticlesByPageNum(articlePage);
         return articlesByPageNum;
+    }
+
+    /*catalog.jsp预加载根据目录标签进行分类显示*/
+    @ResponseBody
+    @RequestMapping(value = "cataName")
+    public List<Articles> showArticlesByCataName(String cataLog){
+        System.out.println("前台传来的cataLog:"+cataLog);
+        List<Articles> articlesByCataLog = articlesService.findArticlesByCataLog(cataLog);
+        System.out.println("后台传出的articlesByCataLog:"+articlesByCataLog);
+        return articlesByCataLog;
     }
 
 }

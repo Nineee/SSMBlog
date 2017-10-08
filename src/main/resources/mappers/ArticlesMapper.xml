@@ -24,4 +24,9 @@
         SELECT id,title,content,author,catalog,tag,comment,date FROM blog_articles limit #{minpage},#{maxpage};
     </select>
 
+    <!--根据目录显示文章-->
+    <select id="findArticlesByCataLog" parameterType="String" resultMap="articlesList">
+        SELECT id,title,content,author,catalog,tag,comment,date FROM blog_articles WHERE catalog=#{cataLog};
+    </select>
+
 </mapper>

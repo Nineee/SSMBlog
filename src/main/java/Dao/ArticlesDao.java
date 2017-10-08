@@ -10,4 +10,6 @@ public interface ArticlesDao {
     List<Articles> findAllArticles();
     /*根据文章页数显示文章*/
     List<Articles> findArticlesByPageNum(ArticlePage articlePage);
+    /*根据目录名称显示文章*/
+    List<Articles> findArticlesByCataLog(String cataLog);
 }

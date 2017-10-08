@@ -16,12 +16,13 @@ public class CataLogController {
     @Autowired
     private CataLogServiceImpl cataLogService;
 
-    /*预加载获取目录内容*/
+    /*main.jsp预加载获取目录内容*/
     @RequestMapping(value = "loadCata")
     @ResponseBody
     public List<CataLog> showCataLog(){
         List<CataLog> allCataLog = cataLogService.findAllCataLog();
-        System.out.println("后台查询到的目录："+allCataLog);
         return allCataLog;
     }
+
+
 }

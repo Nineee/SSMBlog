@@ -8,9 +8,9 @@ $(function() {
             var json = eval(data);
             $.each(json,function (index,item) {
                 $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content);
+                $("#content1").html(json[0].content.substring(0,150)+"...........");
                 $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content);
+                $("#content2").html(json[1].content.substring(0,150)+"...........");
                 $("#id_num1").html(json[0].id);
                 $("#id_num2").html(json[1].id);
             })
@@ -22,17 +22,16 @@ $(function() {
         dataType: "JSON",
         url:"/loadCata.do",
         success: function (data) {
-
             console.info(data)
             var json = eval(data);
             $.each(json,function (index,item) {
                 $("#catalog1").html(json[0].cataName);
-                $("#catalog2").html(json[0].cataName);
-                $("#catalog3").html(json[0].cataName);
-                $("#catalog4").html(json[0].cataName);
-                $("#catalog5").html(json[0].cataName);
-                $("#catalog6").html(json[0].cataName);
-                $("#catalog7").html(json[0].cataName);
+                $("#catalog2").html(json[1].cataName);
+                $("#catalog3").html(json[2].cataName);
+                $("#catalog4").html(json[3].cataName);
+                $("#catalog5").html(json[4].cataName);
+                $("#catalog6").html(json[5].cataName);
+                $("#catalog7").html(json[6].cataName);
             })
         }
     })
@@ -53,9 +52,9 @@ function pagenum1(){
             var json = eval(data);
             $.each(json,function (index,item) {
                 $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content);
+                $("#content1").html(json[0].content.substring(0,150)+"...........");
                 $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content);
+                $("#content2").html(json[1].content.substring(0,150)+"...........");
                 $("#id_num1").html(json[0].id);
                 $("#id_num2").html(json[1].id);
             })
@@ -77,9 +76,9 @@ function pagenum2(){
             console.info(json)
             $.each(json,function (index,item) {
                 $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content);
+                $("#content1").html(json[0].content.substring(0,150)+"...........");
                 $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content);
+                $("#content2").html(json[1].content.substring(0,150)+"...........");
                 $("#id_num1").html(json[0].id);
                 $("#id_num2").html(json[1].id);
             })
@@ -101,9 +100,9 @@ function pagenum3(){
             var json = eval(data);
             $.each(json,function (index,item) {
                 $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content);
+                $("#content1").html(json[0].content.substring(0,150)+"...........");
                 $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content);
+                $("#content2").html(json[1].content.substring(0,150)+"...........");
                 $("#id_num1").html(json[0].id);
                 $("#id_num2").html(json[1].id);
             })
@@ -126,12 +125,49 @@ function nextpage() {
             var json = eval(data);
             $.each(json,function (index,item) {
                 $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content);
+                $("#content1").html(json[0].content.substring(0,150)+"...........");
                 $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content);
+                $("#content2").html(json[1].content.substring(0,150)+"...........");
                 $("#id_num1").html(json[0].id);
                 $("#id_num2").html(json[1].id);
             })
         }
     })
+}
+
+/*顶层菜单栏传递参数到catalog.jsp*/
+function catalog1() {
+    var cataName = document.getElementById("catalog1").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog2() {
+    var cataName = document.getElementById("catalog2").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog3() {
+    var cataName = document.getElementById("catalog3").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog4() {
+    var cataName = document.getElementById("catalog4").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog5() {
+    var cataName = document.getElementById("catalog5").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog6() {
+    var cataName = document.getElementById("catalog6").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
+}
+function catalog7() {
+    var cataName = document.getElementById("catalog7").innerHTML;
+    var url = "catalog.jsp?cataName="+cataName;
+    window.location.href=url;
 }

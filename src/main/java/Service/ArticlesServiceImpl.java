@@ -25,4 +25,10 @@ public class ArticlesServiceImpl implements ArticlesService{
     public List<Articles> findArticlesByPageNum(ArticlePage articlePage) {
         return articlesDao.findArticlesByPageNum(articlePage);
     }
+
+    /*根据目录名称显示文章*/
+    @Override
+    public List<Articles> findArticlesByCataLog(String cataLog) {
+        return articlesDao.findArticlesByCataLog(cataLog);
+    }
 }

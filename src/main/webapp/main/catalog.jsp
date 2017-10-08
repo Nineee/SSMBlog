@@ -12,6 +12,7 @@
 </head>
 <%--主页交互JS--%>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/catalog.js"></script>
 <body>
 <header>
     <nav id="nav">
@@ -24,7 +25,7 @@
             <li><a href="javascript:catalog5()" target="_blank" id="catalog5"></a></li>
             <li><a href="javascript:catalog6()" target="_blank" id="catalog6"></a></li>
             <li><a href="javascript:catalog7()" target="_blank" id="catalog7"></a></li>
-            <li><a target="_blank">Connect Me</a></li>
+            <li><a href="" target="_blank">Connect Me</a></li>
         </ul>
         <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
     </nav>
@@ -90,9 +91,9 @@
         </section>
     </aside>
     <div class="blogitem" >
-<%--            <form id="article" type="post">
-            <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
-            <article>
+        <%--            <form id="article" type="post">
+                    <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
+        <article>
             <h2 class="title"><a id="title1" href="/" ></a></h2>
             <ul class="text">
                 <p id="content1"></p>
@@ -102,20 +103,9 @@
             <div class="textfoot">
                 <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num1"></a>
             </div>
-            </article>
-<%--            </c:forEach>
-            </form>--%>
-        <article>
-
-            <h2 class="title"><a id="title2" href="/"></a></h2>
-            <ul class="text">
-                <p id="content2"></p>
-                <p class="textimg"><img src="images/text01.jpg"></p>
-            </ul>
-            <div class="textfoot">
-                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num2"></a>
-            </div>
         </article>
+        <%--            </c:forEach>
+                    </form>--%>
         <div class="pages">
             <a hidefocus="" onclick="pagenum1()" id="page1" >1</a>
             <a hidefocus="" onclick="pagenum2()" id="page2">2</a>
