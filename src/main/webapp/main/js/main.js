@@ -5,15 +5,30 @@ $(function() {
         dataType: "JSON",
         url:"/load.do",
         success: function (data) {
+            console.info(data);
             var json = eval(data);
-            $.each(json,function (index,item) {
-                $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content.substring(0,150)+"...........");
-                $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content.substring(0,150)+"...........");
-                $("#id_num1").html(json[0].id);
-                $("#id_num2").html(json[1].id);
-            })
+            if(parseInt(json.length)==parseInt(0)){
+                $("#article1").remove; //删除article1标签
+                $("#article2").remove; //删除article2标签
+                alert("已经到底了！^_^")
+            }else {
+                if(parseInt(json.length)==parseInt(1)){
+                    $("#title1").html(json[0].title);
+                    $("#content1").html(json[0].content.substring(0,150)+"••••••••••");
+                    $("#img1").attr("src",json[0].picture);
+                    $("#id_num1").html(json[0].id);
+                    $("#article2").remove; //删除article标签
+                }else {
+                    $("#title1").html(json[0].title);
+                    $("#content1").html(json[0].content.substring(0,150)+"••••••••••");
+                    $("#img1").attr("src",json[0].picture);
+                    $("#id_num1").html(json[0].id);
+                    $("#title2").html(json[1].title);
+                    $("#content2").html(json[1].content.substring(0,150)+"••••••••••");
+                    $("#img2").attr("src",json[1].picture);
+                    $("#id_num2").html(json[1].id);
+                }
+            }
         }
     });
 /*主页预加载目录内容*/
@@ -44,20 +59,31 @@ function pagenum1(){
         type: "POST",
         async:false,
         dataType: "JSON",
-        data:{
-            "pagenum": parseInt(document.getElementById("page1").innerHTML)
-        },
         url: "/page.do",
         success: function (data) {
             var json = eval(data);
-            $.each(json,function (index,item) {
-                $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content.substring(0,150)+"...........");
-                $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content.substring(0,150)+"...........");
-                $("#id_num1").html(json[0].id);
-                $("#id_num2").html(json[1].id);
-            })
+                if(parseInt(json.length)==parseInt(0)){
+                    document.getElementById("article1").style.display="none";//设置标签隐藏
+                    document.getElementById("article2").style.display="none";//设置标签隐藏
+                    alert("已经到底了！^_^")
+                }else {
+                    if(parseInt(json.length)==parseInt(1)){
+                        $("#title1").html(json[0].title);
+                        $("#content1").html(json[0].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[0].picture);
+                        $("#id_num1").html(json[0].id);
+                        document.getElementById("article2").style.display="none";//设置标签隐藏
+                    }else {
+                        $("#title1").html(json[0].title);
+                        $("#content1").html(json[0].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[0].picture);
+                        $("#id_num1").html(json[0].id);
+                        $("#title2").html(json[1].title);
+                        $("#content2").html(json[1].content.substring(0,150)+"••••••••••");
+                        $("#img2").attr("src",json[1].picture);
+                        $("#id_num2").html(json[1].id);
+                    }
+                }
         }
     })
 }
@@ -67,21 +93,33 @@ function pagenum2(){
         type: "POST",
         async:false,
         dataType: "JSON",
-        data:{
-            "pagenum":parseInt(document.getElementById("page2").innerHTML)
-        },
         url:"/page.do",
         success: function (data) {
+            console.info(data)
             var json = eval(data);
-            console.info(json)
-            $.each(json,function (index,item) {
-                $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content.substring(0,150)+"...........");
-                $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content.substring(0,150)+"...........");
-                $("#id_num1").html(json[0].id);
-                $("#id_num2").html(json[1].id);
-            })
+                if(parseInt(json.length)<=parseInt(2)){
+                    document.getElementById("article1").style.display="none";//设置标签隐藏
+                    document.getElementById("article2").style.display="none";//设置标签隐藏
+                    alert("已经到底了！^_^")
+                }else {
+                    if(parseInt(json.length)==parseInt(3)){
+                        $("#title1").html(json[2].title);
+                        $("#content1").html(json[2].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[2].picture);
+                        $("#id_num1").html(json[2].id);
+                        document.getElementById("article2").style.display="none";//设置标签隐藏
+                    }else {
+                        $("#title1").html(json[2].title);
+                        $("#content1").html(json[2].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[2].picture);
+                        $("#id_num1").html(json[2].id);
+                        $("#title2").html(json[3].title);
+                        $("#content2").html(json[3].content.substring(0,150)+"••••••••••");
+                        $("#img2").attr("src",json[3].picture);
+                        $("#id_num2").html(json[3].id);
+                    }
+                }
+
         }
     })
 }
@@ -92,44 +130,56 @@ function pagenum3(){
         type: "POST",
         async:false,
         dataType: "JSON",
-        data:{
-            "pagenum":parseInt(document.getElementById("page3").innerHTML)
-        },
         url:"/page.do",
         success: function (data) {
             var json = eval(data);
-            $.each(json,function (index,item) {
-                $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content.substring(0,150)+"...........");
-                $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content.substring(0,150)+"...........");
-                $("#id_num1").html(json[0].id);
-                $("#id_num2").html(json[1].id);
-            })
+                if(parseInt(json.length)<=parseInt(4)){
+                    document.getElementById("article1").style.display="none";//设置标签隐藏
+                    document.getElementById("article2").style.display="none";//设置标签隐藏
+                    alert("已经到底了！^_^")
+                }else {
+                    if(parseInt(json.length)==parseInt(5)){
+                        $("#title1").html(json[4].title);
+                        $("#content1").html(json[4].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[4].picture);
+                        $("#id_num1").html(json[4].id);
+                        document.getElementById("article2").style.display="none";//设置标签隐藏
+                    }else {
+                        $("#title1").html(json[4].title);
+                        $("#content1").html(json[4].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[4].picture);
+                        $("#id_num1").html(json[4].id);
+                        $("#title2").html(json[5].title);
+                        $("#content2").html(json[5].content.substring(0,150)+"••••••••••");
+                        $("#img2").attr("src",json[5].picture);
+                        $("#id_num2").html(json[5].id);
+                    }
+                }
         }
     })
 }
 
 /*下一页点击事件数据交互*/
 function nextpage() {
-    var nextpagenum = parseInt(document.getElementById("id_num2").innerHTML)/2+1;
+    var title = document.getElementById("title2").innerHTML;
     $.ajax({
         type: "POST",
         async:false,
         dataType: "JSON",
-        data:{
-            "pagenum":parseInt(document.getElementById("id_num2").innerHTML)/2+1
-        },
         url:"/page.do",
         success: function (data) {
             var json = eval(data);
             $.each(json,function (index,item) {
-                $("#title1").html(json[0].title);
-                $("#content1").html(json[0].content.substring(0,150)+"...........");
-                $("#title2").html(json[1].title);
-                $("#content2").html(json[1].content.substring(0,150)+"...........");
-                $("#id_num1").html(json[0].id);
-                $("#id_num2").html(json[1].id);
+                if((json[index].title)==title.toString()){
+                        $("#title1").html(json[index+1].title);
+                        $("#content1").html(json[index+1].content.substring(0,150)+"••••••••••");
+                        $("#img1").attr("src",json[index+1].picture);
+                        $("#id_num1").html(json[index+1].id);
+                        $("#title2").html(json[index+2].title);
+                        $("#content2").html(json[index+2].content.substring(0,150)+"••••••••••");
+                        $("#img2").attr("src",json[index+2].picture);
+                        $("#id_num2").html(json[index+2].id);
+                }
             })
         }
     })

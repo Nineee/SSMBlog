@@ -14,10 +14,11 @@ public class Articles {
     private String tag;
     private String comment;
     private Date date;
+    private String picture;
     public Articles() {
     }
 
-    public Articles(int id, String title, String content,String author, String catalog, String tag, String comment, Date date) {
+    public Articles(int id, String title, String content,String author, String catalog, String tag, String comment, Date date,String picture) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -26,6 +27,7 @@ public class Articles {
         this.tag = tag;
         this.comment = comment;
         this.date = date;
+        this.picture=picture;
     }
 
 
@@ -93,6 +95,13 @@ public class Articles {
         this.date = date;
     }
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 
     @Override
     public String toString() {
@@ -105,6 +114,7 @@ public class Articles {
                 ", tag='" + tag + '\'' +
                 ", comment='" + comment + '\'' +
                 ", date=" + date +
+                ", picture='" + picture + '\'' +
                 '}';
     }
 }

@@ -20,15 +20,20 @@ public class ArticlesServiceImpl implements ArticlesService{
         return articlesDao.findAllArticles();
     }
 
-    /*根据文章页数显示文章*/
+    /*显示所有文章js进行分页*/
     @Override
-    public List<Articles> findArticlesByPageNum(ArticlePage articlePage) {
-        return articlesDao.findArticlesByPageNum(articlePage);
+    public List<Articles> findArticlesByPageNum() {
+        return articlesDao.findArticlesByPageNum();
     }
 
     /*根据目录名称显示文章*/
     @Override
-    public List<Articles> findArticlesByCataLog(String cataLog) {
-        return articlesDao.findArticlesByCataLog(cataLog);
+    public List<Articles> findArticlesByCataLog(String catalog) {
+        return articlesDao.findArticlesByCataLog(catalog);
     }
+
+/*    @Override
+    public List<Articles> findArticlesByCataNameNum(ArticlePage articlePage) {
+        return articlesDao.findArticlesByPageNum(articlePage);
+    }*/
 }

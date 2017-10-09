@@ -43,7 +43,7 @@
                 <p>低头去学习社会知识和技能</p>
             </ul>
         </section>
-        <section><a href="#"><img src="images/text02.jpg"></a>
+        <section><a href="#"><img src="images/s7.jpg"></a>
             <ul>
                 <h2><a href="#">30岁的年纪</a></h2>
                 <p>也许是有一次的人生转折点</p>
@@ -92,35 +92,35 @@
     <div class="blogitem" >
 <%--            <form id="article" type="post">
             <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
-            <article>
+    <article id="article1">
             <h2 class="title"><a id="title1" href="/" ></a></h2>
             <ul class="text">
                 <p id="content1"></p>
-                <p class="textimg"><img src="images/text02.jpg"></p>
+                <p class="textimg"><img id="img1" src=""></p>
             </ul>
 
             <div class="textfoot">
                 <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num1"></a>
             </div>
-            </article>
-<%--            </c:forEach>
-            </form>--%>
-        <article>
+    </article>
+    <%--            </c:forEach>
+                </form>--%>
+    <article id="article2">
 
-            <h2 class="title"><a id="title2" href="/"></a></h2>
-            <ul class="text">
-                <p id="content2"></p>
-                <p class="textimg"><img src="images/text01.jpg"></p>
-            </ul>
-            <div class="textfoot">
-                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num2"></a>
-            </div>
-        </article>
+        <h2 class="title"><a id="title2" href="/"></a></h2>
+        <ul class="text">
+            <p id="content2"></p>
+            <p class="textimg" ><img id="img2" src=""></p>
+        </ul>
+        <div class="textfoot">
+            <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num2"></a>
+        </div>
+    </article>
         <div class="pages">
-            <a hidefocus="" onclick="pagenum1()" id="page1" >1</a>
-            <a hidefocus="" onclick="pagenum2()" id="page2">2</a>
-            <a hidefocus="" onclick="pagenum3()" id="page3">3</a>
-            <a class="next" onclick="nextpage()">下一页&gt;&gt;</a>
+            <a hidefocus="" href="javascript:pagenum1()" id="page1" >1</a>
+            <a hidefocus="" href="javascript:pagenum2()" id="page2">2</a>
+            <a hidefocus="" href="javascript:pagenum3()" id="page3">3</a>
+            <a class="next" href="javascript:nextpage()">下一页&gt;&gt;</a>
         </div>
     </div>
 </div>

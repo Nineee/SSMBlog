@@ -4,11 +4,11 @@ package Bean;
 public class ArticlePage {
     private int minpage;
     private int maxpage;
-
     public ArticlePage(int minpage, int maxpage) {
         this.minpage = minpage;
         this.maxpage = maxpage;
     }
+
 
     public ArticlePage() {
     }
@@ -28,6 +28,7 @@ public class ArticlePage {
     public void setMaxpage(int maxpage) {
         this.maxpage = maxpage;
     }
+
 
     @Override
     public String toString() {
