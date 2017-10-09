@@ -16,11 +16,11 @@
 </head>
 <%--点击登录按钮发送请求--%>
 <script type="text/javascript">
-    function login() {
-        var loginform=document.getElementById("login_form");
-        loginform.action="/login.do";
-        loginform.submit();
-    }
+        function login() {
+            var loginform=document.getElementById("login_form");
+            loginform.action="/login.do";
+            loginform.submit();
+        }
 </script>
 <body>
 <div class="container demo-1">

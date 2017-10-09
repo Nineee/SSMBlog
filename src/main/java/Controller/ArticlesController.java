@@ -51,16 +51,6 @@ public class ArticlesController {
         System.out.println("后台传出的articlesByCataLog:"+articlesByCataLog);
         return articlesByCataLog;
     }
-
-   /* *//*catalog.jsp根据文章页数和目录分类进行显示*//*
-    @ResponseBody
-    @RequestMapping(value = "pageCataLog")
-    public List<Articles> showArticlesByCataNameNum(int pagenum,String catalog){
-        System.out.println("前台传来的cataLog:"+catalog+";l"+"pagenum:"+pagenum);
-        ArticlePage articlePage = new ArticlePage(pagenum*2+1,2,catalog); //设置文章页数属性(与limit(1,3)类似对应)
-        List<Articles> articlesByCataLog = articlesService.findArticlesByCataNameNum(articlePage);
-        System.out.println("后台传出的articlesByCataLog:"+articlesByCataLog);
-        return articlesByCataLog;
-    }*/
+    
 
 }

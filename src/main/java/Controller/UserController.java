@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 
 import javax.servlet.http.HttpServletResponse;
@@ -25,9 +26,21 @@ public class UserController {
             String password= user.getPassword();
             User u = userService.findPwdByUsername(user.getUsername());
             if (u.getPassword().equals(password)){
-                return "redirect:/main/main.jsp";
+                return "redirect:/manage/manage.jsp";
                }
                return "redirect:/login/login.jsp";
             }
-    }
+
+    /*主页面预加载用户信息*//*
+    @ResponseBody
+    @RequestMapping(value = "/loadUser")
+    public User loadUser(){
+        User userInf = userService.findUserInf();
+        System.out.println("主页返回用户信息："+userInf);
+        return userInf;
+    }*/
+
+
+
+}
 

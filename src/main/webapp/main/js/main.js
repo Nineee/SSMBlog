@@ -51,6 +51,20 @@ $(function() {
             })
         }
     })
+    
+   /* //预加载用户信息
+    $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        url:"/loadUser.do",
+        success:function (data) {
+            
+        }
+    })*/
+
+
+
+
 });
 
 /*第一页，第二页,第三页点击事件数据交互*/

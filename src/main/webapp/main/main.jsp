@@ -1,5 +1,5 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <html>
 <head>
     <meta charset="gb2312">
@@ -24,29 +24,29 @@
             <li><a href="javascript:catalog5()" target="_blank" id="catalog5"></a></li>
             <li><a href="javascript:catalog6()" target="_blank" id="catalog6"></a></li>
             <li><a href="javascript:catalog7()" target="_blank" id="catalog7"></a></li>
-            <li><a target="_blank">Connect Me</a></li>
+            <li><a href="#" target="_blank">Connect Me</a></li>
         </ul>
         <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
     </nav>
 </header>
 <div class="mainContent">
     <div class="ulist">
-        <section><a href="#"> <img src="images/s5.jpg"></a>
+        <section><a href="#"> <img src="images/top1.jpg"></a>
             <ul>
                 <h2><a href="#">18岁的年纪</a></h2>
                 <p>学校赋予的所谓的”知识“</p>
             </ul>
         </section>
-        <section><a href="#"><img src="images/s7.jpg"></a>
+        <section><a href="#"><img src="images/top2.jpg"></a>
             <ul>
                 <h2><a href="#">25岁的年纪</a></h2>
                 <p>低头去学习社会知识和技能</p>
             </ul>
         </section>
-        <section><a href="#"><img src="images/s7.jpg"></a>
+        <section><a href="#"><img src="images/top3.jpg"></a>
             <ul>
                 <h2><a href="#">30岁的年纪</a></h2>
-                <p>也许是有一次的人生转折点</p>
+                <p>也许是一次的人生转折点</p>
             </ul>
         </section>
     </div>
@@ -54,16 +54,18 @@
 <div class="mainContent2">
     <aside>
         <div class="avatar">
-            <a href="#"><span>ShareFree</span></a>
+            <a href="#"><img src="imgages/head.png" id="headpic"><span id="username1">ShareFree</span></a>
         </div>
         <section class="topspaceinfo">
-            <h1>Sharefree</h1>
-            <p>个性签名：www.sharefree.co</p>
+            <h1 id="username"></h1>
+            <p id="sign">Why are we alive?</p>
         </section>
         <div class="userinfo">
             <p class="q-fans"> 粉丝：<a href="/" target="_blank">167</a></p>
-            <p class="btns"><a href="/" target="_blank">私信</a><a href="/" target="_blank">相册</a><a href="/"
-                                                                                                   target="_blank">存档</a>
+            <p class="btns">
+                <a href="/" target="_blank">私信</a>
+                <a href="/" target="_blank">相册</a>
+                <a href="/" target="_blank">存档</a>
             </p>
         </div>
         <section class="newpic">
@@ -90,8 +92,6 @@
         </section>
     </aside>
     <div class="blogitem" >
-<%--            <form id="article" type="post">
-            <c:forEach items="${allarticles}" var="a" varStatus="status">--%>
     <article id="article1">
             <h2 class="title"><a id="title1" href="/" ></a></h2>
             <ul class="text">
@@ -103,10 +103,7 @@
                 <a href="/">阅读全文</a><a href="/">评论</a><a href="/">转载</a><a id="id_num1"></a>
             </div>
     </article>
-    <%--            </c:forEach>
-                </form>--%>
     <article id="article2">
-
         <h2 class="title"><a id="title2" href="/"></a></h2>
         <ul class="text">
             <p id="content2"></p>

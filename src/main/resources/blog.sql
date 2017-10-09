@@ -18,6 +18,8 @@ INSERT INTO `blog_user` (`username`,`password`,`age`,`sex`,`sign`,`headpic`,`add
     VALUES
       ('739889702@qq.com','123',22,'男','Why are we alive?','images/head.png','江苏',830);
 
+
+SELECT id,username,password,age,sex,sign,headpic,address,browser FROM blog_user;
 /*文章表*/
 DROP TABLE IF EXISTS `blog_articles`;
 CREATE TABLE `blog_articles` (
