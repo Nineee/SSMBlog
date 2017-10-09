@@ -1,7 +1,7 @@
 @charset "gb2312";
 /* CSS Document */
 * { margin: 0; padding: 0 }
-body { font: 12px "宋体", "Arial Narrow", HELVETICA; color: #3F3E3C; line-height: 1.5; background: url(../images/bg.png) no-repeat top center #96CEB4 }
+body { font: 12px "瀹嬩綋", "Arial Narrow", HELVETICA; color: #3F3E3C; line-height: 1.5; background: url(../images/bg.png) no-repeat top center #96CEB4 }
 img { border: 0; vertical-align: middle }
 p { display: block; }
 ul { list-style: none; }
@@ -159,7 +159,7 @@ aside section h2 { background: #299982; color: #FFF; padding-left: 30px; height:
 .taglist ul li a { padding: 2px 5px; display: inline-block; float: left; margin-right: 5px; color: #454545; }
 .taglist ul li a:hover { background: #299982; color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px }
 .blogitem {width: 960px;background: rgba(255,255,255,0.7);float: right;}
-.blogitem article { border-bottom: #C0E3CF 40px solid; }
+.blogitem article {border-bottom: #C0E3CF 40px solid;}
 .title { background: url(../images/titlebg.png) no-repeat 2% 80%; font-size: 20px; line-height: 28px; display: inline-block; padding: 38px 60px 8px 60px; border-bottom: 1px solid #e2e2e2; width: 100%; }
 .title a { color: #454545; }
 .title a:hover { padding: 20px }
@@ -167,9 +167,9 @@ aside section h2 { background: #299982; color: #FFF; padding-left: 30px; height:
 .text p { line-height: 24px; margin-bottom: 10px }
 .textimg { text-align: center }
 .textimg img { max-width: 500px; width:expression(document.body.clientWidth > 500? "500px": "auto" );}/*for ie6*/
-.textfoot { padding: 20px 60px; border-top: 1px solid #dddcdb; text-align: right; box-shadow: #999 2px 2px 3px }
+.textfoot { padding: 25px 20px 60px; border-top: 1px solid #dddcdb; text-align: right; box-shadow: #999 2px 2px 3px }
 .textfoot a { margin-left: 10px; }
-.pages { padding: 0 60px 25px; background: #C0E3CF; text-align: right }
+.pages {padding: 25px 60px 25px;background: #C0E3CF;text-align: right;}
 .pages span { background: #299982; color: #fff; }
 .pages a { background: #fff; color: #454545; padding: 5px 8px; border: none; margin: 0 0 0 5px; }
 .pages span { padding: 5px 8px; border: none; margin: 0 0 0 5px; }

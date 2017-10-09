@@ -7,22 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbafd18b-9c99-4267-9549-b9525b1cd5e2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/main/images/text01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/main/images/text02.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/c3880c3a-1943-475d-a539-296f58db4fea.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c3880c3a-1943-475d-a539-296f58db4fea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bean/ArticlePage.java" afterPath="$PROJECT_DIR$/src/main/java/Bean/ArticlePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bean/Articles.java" afterPath="$PROJECT_DIR$/src/main/java/Bean/Articles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Service/ArticlesService.java" afterPath="$PROJECT_DIR$/src/main/java/Service/ArticlesService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/Bean/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/blog.sql" afterPath="$PROJECT_DIR$/src/main/resources/blog.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/main/catalog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/main/catalog.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/main/css/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/main/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/main/js/catalog.js" afterPath="$PROJECT_DIR$/src/main/webapp/main/js/catalog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/main/js/main.js" afterPath="$PROJECT_DIR$/src/main/webapp/main/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/main/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/main/main.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +62,8 @@
       <file leaf-file-name="ArticlesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="650">
+              <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -81,7 +72,7 @@
       <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="2725">
               <caret line="109" column="39" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="39" />
               <folding />
             </state>
@@ -101,8 +92,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/main/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="163" column="4" lean-forward="true" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="60" />
+            <state relative-caret-position="-2999">
+              <caret line="42" column="87" lean-forward="false" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -110,11 +101,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2825">
+              <caret line="113" column="45" lean-forward="false" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+              <folding>
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#815#816#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1035#1036#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1123#1124#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1361#1362#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1425#1426#0" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1509#1510#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1567#1568#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#1703#1704#0" expanded="true" />
+                <element signature="e#1749#1750#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+                <element signature="e#1818#1819#0" expanded="true" />
+                <element signature="e#1848#1849#0" expanded="true" />
+                <element signature="e#1891#1892#0" expanded="true" />
+                <element signature="e#1929#1930#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/main/js/catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="170" column="65" lean-forward="true" selection-start-line="170" selection-start-column="65" selection-end-line="170" selection-end-column="65" />
+            <state relative-caret-position="-4306">
+              <caret line="23" column="88" lean-forward="false" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -123,8 +181,8 @@
       <file leaf-file-name="ArticlesMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="28" column="87" lean-forward="true" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
+            <state relative-caret-position="700">
+              <caret line="28" column="87" lean-forward="false" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
               <folding>
                 <marker date="1507456683772" expanded="true" signature="871:963" ph="SELECT id,ti... " />
                 <marker date="1507456683772" expanded="true" signature="1077:1159" ph="SELECT id,ti... " />
@@ -134,48 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticlesServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="catalog.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/main/catalog.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="135" column="36" lean-forward="true" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticlesDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticlesService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="3375">
+              <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -204,10 +225,14 @@
       <find>.title {background: url(../images</find>
       <find>removeAll</find>
       <find>...........</find>
+      <find>document.getElementById(&quot;article2&quot;).style.display=&quot;none&quot;;</find>
+      <find>已经到底了！^_^</find>
     </findStrings>
     <replaceStrings>
       <replace>••••••••••</replace>
       <replace>remove</replace>
+      <replace>document.getElementById(&quot;article2&quot;).style.visibility=&quot;hidden&quot;;</replace>
+      <replace>没有这么多哦！^_^</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -248,7 +273,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/main/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/CataLog.java" />
@@ -262,7 +286,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/Articles.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/main/catalog.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/blog.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/main/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/Bean/ArticlePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Service/ArticlesService.java" />
@@ -270,8 +293,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/main/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/main/js/catalog.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/blog.sql" />
       </list>
     </option>
   </component>
@@ -333,8 +358,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="71" />
-    <option name="y" value="-17" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1513" />
     <option name="height" value="881" />
   </component>
@@ -548,10 +573,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -566,19 +591,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\css" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\resources" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\login" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\flat-login-form-3-0\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\css" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\articless" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\login\css" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\css" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\resources" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\login" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\flat-login-form-3-0\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -806,6 +831,7 @@
       <workItem from="1507341921500" duration="34000" />
       <workItem from="1507341998678" duration="16389000" />
       <workItem from="1507429023334" duration="38499000" />
+      <workItem from="1507513860112" duration="5691000" />
     </task>
     <task id="LOCAL-00001" summary="2017-10-02">
       <created>1506931387270</created>
@@ -829,7 +855,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162167000" />
+    <option name="totallyTimeSpent" value="167858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,12 +886,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2601626" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2601626" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2682927" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19280206" sideWeight="0.54814816" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19537275" sideWeight="0.54814816" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17930591" sideWeight="0.45185184" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22764228" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1070,14 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/CataLogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1148,22 +1166,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="34" column="67" lean-forward="false" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1177,16 +1184,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/images/text02.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/images/text01.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/images/text02.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/images/text01.jpg" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/CataLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1229,14 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="79" column="19" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="87" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ArticlePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1247,7 +1238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="300">
           <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
           <folding />
         </state>
@@ -1255,8 +1246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#424#425#0" expanded="true" />
             <element signature="e#476#477#0" expanded="true" />
@@ -1271,15 +1262,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="28" column="87" lean-forward="true" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
+        <state relative-caret-position="700">
+          <caret line="28" column="87" lean-forward="false" selection-start-line="28" selection-start-column="87" selection-end-line="28" selection-end-column="87" />
           <folding>
             <marker date="1507456683772" expanded="true" signature="871:963" ph="SELECT id,ti... " />
             <marker date="1507456683772" expanded="true" signature="1077:1159" ph="SELECT id,ti... " />
@@ -1290,8 +1281,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="650">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2725">
+          <caret line="109" column="39" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/catalog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="135" column="36" lean-forward="false" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1304,36 +1311,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="109" column="39" lean-forward="false" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/catalog.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="135" column="36" lean-forward="true" selection-start-line="135" selection-start-column="36" selection-end-line="135" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/main/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="163" column="4" lean-forward="true" selection-start-line="163" selection-start-column="4" selection-end-line="163" selection-end-column="60" />
+        <state relative-caret-position="-2999">
+          <caret line="42" column="87" lean-forward="false" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/main/js/catalog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="170" column="65" lean-forward="true" selection-start-line="170" selection-start-column="65" selection-end-line="170" selection-end-column="65" />
+        <state relative-caret-position="-4306">
+          <caret line="23" column="88" lean-forward="false" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2825">
+          <caret line="113" column="45" lean-forward="false" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+          <folding>
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1425#1426#0" expanded="true" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1567#1568#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1703#1704#0" expanded="true" />
+            <element signature="e#1749#1750#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1891#1892#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>

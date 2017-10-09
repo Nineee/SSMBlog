@@ -3,14 +3,20 @@ USE blogdemo;
 DROP TABLE IF EXISTS `blog_user`;
 CREATE TABLE `blog_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(15) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `password` varchar(10) DEFAULT NULL,
+  `age` int(5) DEFAULT NULL,
+  `sex` char(5) DEFAULT NULL,
+  `address` varchar(10) DEFAULT NULL,
+  `sign` varchar(50) DEFAULT NULL,
+  `headpic` varchar(20) DEFAULT NULL,
+  `browser` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `blog_user` (`username`,`password`)
+INSERT INTO `blog_user` (`username`,`password`,`age`,`sex`,`sign`,`headpic`,`address`,`browser`)
     VALUES
-      (`123@qq.com`,`123`);
+      ('739889702@qq.com','123',22,'男','Why are we alive?','images/head.png','江苏',830);
 
 /*文章表*/
 DROP TABLE IF EXISTS `blog_articles`;
@@ -88,6 +94,7 @@ INSERT INTO `blog_articles` (`title`,`author`,`content`,`catalog`,`tag`,`comment
     'PHP','PHP','还不错哦','2017-10-03','images/php.png');
 
 SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles WHERE catalog="c++" limit 0,2;
+
 /*目录表*/
 DROP TABLE IF EXISTS `blog_catalog`;
 CREATE TABLE `blog_catalog` (
