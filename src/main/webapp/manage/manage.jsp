@@ -135,7 +135,7 @@
                     <textarea class="form-control" rows="3"></textarea>
                     </br>
                     <button type="button" class="btn btn-primary" data-loading-text="Loading...">取消发布
-                    </button>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;
                     <button type="button" class="btn btn-primary" data-loading-text="Loading...">发布
                     </button></br></br></br>
                 </div>
