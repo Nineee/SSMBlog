@@ -32,8 +32,9 @@ public class ArticlesServiceImpl implements ArticlesService{
         return articlesDao.findArticlesByCataLog(catalog);
     }
 
-/*    @Override
-    public List<Articles> findArticlesByCataNameNum(ArticlePage articlePage) {
-        return articlesDao.findArticlesByPageNum(articlePage);
-    }*/
+    /*保存文章*/
+    @Override
+    public String saveArticle(Articles articles) {
+        return articlesDao.saveArticle(articles);
+    }
 }

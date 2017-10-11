@@ -1,0 +1,16 @@
+Dao\ArticlesDao.class
+Controller\UserController.class
+Controller\CataLogController.class
+Bean\CataLog.class
+Bean\ArticlePage.class
+Service\UserServiceImpl.class
+Bean\User.class
+Service\ArticlesServiceImpl.class
+Dao\CataLogDao.class
+Controller\ArticlesController.class
+Service\CataLogService.class
+Service\CataLogServiceImpl.class
+Service\ArticlesService.class
+Bean\Articles.class
+Service\UserService.class
+Dao\UserDao.class

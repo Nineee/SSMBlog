@@ -3,20 +3,17 @@ package Controller;
 import Bean.ArticlePage;
 import Bean.Articles;
 import Service.ArticlesService;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.multipart.MultipartFile;
 
-import javax.jws.WebParam;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.http.HttpSession;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Controller
 public class ArticlesController {
@@ -51,6 +48,38 @@ public class ArticlesController {
         System.out.println("后台传出的articlesByCataLog:"+articlesByCataLog);
         return articlesByCataLog;
     }
-    
 
+    /*写文章页面提交的数据*/
+    @RequestMapping(value = "/upload")
+    @ResponseBody
+    public void insertArticle(@RequestParam("picture")MultipartFile picture, HttpSession session, Articles articles) throws IOException{
+        System.out.println("传来前："+articles);
+        System.out.println("文件名："+picture.getOriginalFilename());
+        Date date = new Date();
+        String realPath = session.getServletContext().getRealPath("/main/images/"); //生成服务器路径用来存放上传的文章图片
+        if(!(picture.getOriginalFilename().equals("") || picture.getOriginalFilename().equals(null))){  //判断上传的文件是否为空
+            String curentTime = new SimpleDateFormat("yyyyMMddHHmmss").format(date); //生成固定格式时间戳
+            //获取到前台传来的文件名加上时间戳防止文件名重复
+            String filename = picture.getOriginalFilename()+curentTime;
+            System.out.println("文件名："+filename);
+            System.out.println("文件服务器路径："+realPath);
+            File file = new File(realPath,filename);
+            articles.setDate(date);
+            articles.setAuthor(session.getAttribute("username").toString());
+            articles.setPicture("images/"+filename);
+            picture.transferTo(file);
+            /*String articleID = articlesService.saveArticle(articles);*/
+            System.out.println("文件传来后："+articles);
+           /* return articleID;*/
+        }else {
+            articles.setPicture(null);
+            articles.setDate(date);
+            articles.setAuthor(session.getAttribute("username").toString());
+            File file = new File(realPath,null);
+            picture.transferTo(file);
+            /*String articleID = articlesService.saveArticle(articles);*/
+            System.out.println("空文件传来后："+articles);
+           /* return articleID;*/
+        }
+    }
 }

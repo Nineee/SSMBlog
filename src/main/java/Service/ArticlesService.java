@@ -16,7 +16,6 @@ public interface ArticlesService {
     List<Articles> findArticlesByPageNum();
     /*根据目录名称显示文章*/
     List<Articles> findArticlesByCataLog(String catalog);
-/*    *//*根据文章页数和目录分类进行显示*//*
-    List<Articles> findArticlesByCataNameNum(ArticlePage articlePage);*/
-
+    /*保存文章*/
+    String saveArticle(Articles articles);
 }
