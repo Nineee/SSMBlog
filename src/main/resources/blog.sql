@@ -3,13 +3,13 @@ USE blogdemo;
 DROP TABLE IF EXISTS `blog_user`;
 CREATE TABLE `blog_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) NOT NULL,
-  `password` varchar(10) DEFAULT NULL,
+  `username` varchar(40) NOT NULL,
+  `password` varchar(40) DEFAULT NULL,
   `age` int(5) DEFAULT NULL,
   `sex` char(5) DEFAULT NULL,
-  `address` varchar(10) DEFAULT NULL,
+  `address` varchar(40) DEFAULT NULL,
   `sign` varchar(50) DEFAULT NULL,
-  `headpic` varchar(20) DEFAULT NULL,
+  `headpic` varchar(40) DEFAULT NULL,
   `browser` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -19,19 +19,18 @@ INSERT INTO `blog_user` (`username`,`password`,`age`,`sex`,`sign`,`headpic`,`add
       ('739889702@qq.com','123',22,'男','Why are we alive?','images/head.png','江苏',830);
 
 
-SELECT id,username,password,age,sex,sign,headpic,address,browser FROM blog_user;
 /*文章表*/
 DROP TABLE IF EXISTS `blog_articles`;
 CREATE TABLE `blog_articles` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `title` varchar(30) DEFAULT NULL,
+  `title` varchar(40) DEFAULT NULL,
   `content` TEXT(8000) DEFAULT NULL ,
-  `author` varchar(10) DEFAULT NULL,
-  `catalog` VARCHAR(10) DEFAULT NULL,
-  `tag` VARCHAR(10) DEFAULT NULL,
+  `author` varchar(40) DEFAULT NULL,
+  `catalog` VARCHAR(40) DEFAULT NULL,
+  `tag` VARCHAR(40) DEFAULT NULL,
   `comment` VARCHAR(200) DEFAULT NULL,
-  `date` VARCHAR(10) DEFAULT NULL,
-  `picture` VARCHAR(20) DEFAULT NULL,
+  `date` VARCHAR(40) DEFAULT NULL,
+  `picture` VARCHAR(40) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

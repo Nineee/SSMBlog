@@ -1,6 +1,5 @@
 package Dao;
 
-import Bean.ArticlePage;
 import Bean.Articles;
 
 import java.util.List;
@@ -13,5 +12,5 @@ public interface ArticlesDao {
     /*根据目录名称显示文章*/
     List<Articles> findArticlesByCataLog(String catalog);
     /*保存文章*/
-    String saveArticle(Articles articles);
+    int saveArticle(Articles articles);
 }

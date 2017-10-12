@@ -1,6 +1,8 @@
 package Bean;
 
 /*文章属性类*/
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class Articles {
     private String catalog;
     private String tag;
     private String comment;
+    @DateTimeFormat(pattern = "yyyy-MM-dd-HH-mm-ss")
     private Date date;
     private String picture;
     public Articles() {
@@ -30,6 +33,13 @@ public class Articles {
         this.picture=picture;
     }
 
+    public Articles(String title, String content, String catalog, String tag, String comment) {
+        this.title = title;
+        this.content = content;
+        this.catalog = catalog;
+        this.tag = tag;
+        this.comment = comment;
+    }
 
     public int getId() {
         return id;

@@ -30,9 +30,9 @@
         SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles WHERE catalog=#{catalog};
     </select>
 
-    <!--插入文章数据-->
+    <!--插入文章数据 （默认返回useGeneratedKeys，keyProperty返回文章的id）-->
     <insert id="saveArticle" parameterType="Bean.Articles" useGeneratedKeys="true" keyProperty="id">
-        insert into blog_articles (title,picture) values (#{title},#{picture});
+        insert into blog_articles (title,content,author,catalog,tag,comment,date,picture) values (#{title},#{content},#{author},#{catalog},#{tag},#{comment},#{date},#{picture});
     </insert>
 
 </mapper>

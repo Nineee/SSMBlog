@@ -1,12 +1,10 @@
 package Controller;
 
-import Bean.ArticlePage;
 import Bean.Articles;
 import Service.ArticlesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -20,7 +18,7 @@ public class ArticlesController {
 
     @Autowired
     private ArticlesService articlesService;
-    /*主页预加载显示所有文章*/
+    /*主页预加载显示前两条文章*/
     @RequestMapping(value = "/load")
     @ResponseBody
     public List<Articles> showArticle(){
@@ -49,10 +47,12 @@ public class ArticlesController {
         return articlesByCataLog;
     }
 
+    /*--------------------------后台请求--------------------------------------*/
     /*写文章页面提交的数据*/
     @RequestMapping(value = "/upload")
     @ResponseBody
-    public void insertArticle(@RequestParam("picture")MultipartFile picture, HttpSession session, Articles articles) throws IOException{
+    public int insertArticle(String title,String content,MultipartFile picture,String tag,String catalog,String comment, HttpSession session) throws IOException{
+        Articles articles = new Articles(title,content,tag,catalog,comment);
         System.out.println("传来前："+articles);
         System.out.println("文件名："+picture.getOriginalFilename());
         Date date = new Date();
@@ -63,23 +63,26 @@ public class ArticlesController {
             String filename = picture.getOriginalFilename()+curentTime;
             System.out.println("文件名："+filename);
             System.out.println("文件服务器路径："+realPath);
+            //设置文件上传路径
             File file = new File(realPath,filename);
+            picture.transferTo(file);
+            //设置article信息保存到数据库
             articles.setDate(date);
             articles.setAuthor(session.getAttribute("username").toString());
             articles.setPicture("images/"+filename);
-            picture.transferTo(file);
-            /*String articleID = articlesService.saveArticle(articles);*/
             System.out.println("文件传来后："+articles);
-           /* return articleID;*/
+            int articleID = articlesService.saveArticle(articles);
+            System.out.println("返回的文章id："+articleID);
+            return articleID;
         }else {
             articles.setPicture(null);
             articles.setDate(date);
             articles.setAuthor(session.getAttribute("username").toString());
-            File file = new File(realPath,null);
-            picture.transferTo(file);
-            /*String articleID = articlesService.saveArticle(articles);*/
             System.out.println("空文件传来后："+articles);
-           /* return articleID;*/
+            int articleID = articlesService.saveArticle(articles);
+            System.out.println("返回的文章id："+articleID);
+            return articleID;
         }
     }
+
 }

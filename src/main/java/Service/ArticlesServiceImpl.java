@@ -1,6 +1,5 @@
 package Service;
 
-import Bean.ArticlePage;
 import Bean.Articles;
 import Dao.ArticlesDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +33,7 @@ public class ArticlesServiceImpl implements ArticlesService{
 
     /*保存文章*/
     @Override
-    public String saveArticle(Articles articles) {
+    public int saveArticle(Articles articles) {
         return articlesDao.saveArticle(articles);
     }
 }
