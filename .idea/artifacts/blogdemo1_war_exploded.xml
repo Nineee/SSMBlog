@@ -7,6 +7,8 @@
           <element id="module-output" name="blogdemo1" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5-pre10" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.8" />
           <element id="library" level="project" name="Maven: junit:junit:4.11" />
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.0.2.RELEASE" />

@@ -86,7 +86,7 @@
       <!--  <log4j.version>1.2.12</log4j.version>-->
         <httpclient.version>4.1.2</httpclient.version>
         <jackson.version>1.9.13</jackson.version>
-        <c3p0.version>0.9.1.2</c3p0.version>
+        <c3p0.version>0.9.5-pre10</c3p0.version>
         <druid.version>1.0.5</druid.version>
         <tomcat.jdbc.version>7.0.53</tomcat.jdbc.version>
         <jstl.version>1.2</jstl.version>
@@ -101,7 +101,18 @@
         <hibernate.validator.version>5.1.1.Final</hibernate.validator.version>
     </properties>
 
+
+
     <dependencies>
+
+        <!--c3p0连接池-->
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.5-pre10</version>
+        </dependency>
+
+
         <!-- junit -->
         <dependency>
             <groupId>junit</groupId>

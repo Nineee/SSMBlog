@@ -21,11 +21,22 @@
   <!-- 加载外部属性文件 -->
 <context:property-placeholder location="classpath:db.properties"/>
 <!--   配置数据源:DriverManagerDataSource,底层对JDBC封装,和C3P0类似 -->
-<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
   <property name="driverClassName" value="${jdbc.driverClass}"></property>
   <property name="url" value="${jdbc.url}"></property>
   <property name="username" value="${jdbc.username}"></property>
   <property name="password" value="${jdbc.pwd}"></property>
+  <!--c3po连接池-->
+  <!-- 初始化连接大小 -->
+  <property name="initialSize" value="${initialSize}" />
+  <!-- 连接池最大数量 -->
+  <property name="maxActive" value="${maxActive}" />
+  <!-- 连接池最大空闲 -->
+  <property name="maxIdle" value="${maxIdle}" />
+  <!-- 连接池最小空闲 -->
+  <property name="minIdle" value="${minIdle}" />
+  <!-- 获取连接最大等待时间 -->
+  <property name="maxWait" value="${maxWait}" />
 </bean>
 
 
@@ -84,28 +95,23 @@
     <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
   </bean>
 
-
-  <!-- 事物配置 -->
+  <!--Spring 事物配置 -->
 <!-- 1.配置事物管理器  -->
 <bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
   <!-- 指定数据源 -->
   <property name="dataSource" ref="dataSource"/>
 </bean>
-
 <!-- 2.配置增强切面 -->
 <tx:advice id="txAdvice" transaction-manager="tx">
   <tx:attributes>
     <tx:method name="*"/>
   </tx:attributes>
 </tx:advice>
-
-<!-- 3.配置AOP -->
+<!-- 3.引用切面-->
 <aop:config>
   <!-- 配置切点表达式 -->
   <aop:pointcut expression="execution(* java.Service.*.*(..))" id="pointcut"/>
   <!-- 配置增强切面 -->
   <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" order="1"/>
 </aop:config>
-
-
 </beans>
