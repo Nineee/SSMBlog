@@ -153,47 +153,36 @@
                 <tr>
                     <th>标题</th>
                     <th>作者</th>
-                    <th>评论</th>
-                    <th>浏览</th>
+                    <th>随笔</th>
+                    <th>目录</th>
                     <th>创建日期</th>
                 </tr>
                 </thead>
                 <tbody id="articles">
-                <%--<tr>
-                    <td>Tanmay</td>
-                    <td>Bangalore</td>
-                    <td>22</td>
-                    <td>25</td>
-                    <td>25</td>
-                </tr>
+                <c:forEach>
                 <tr>
-                    <td>Sachin</td>
-                    <td>Mumbai</td>
-                    <td>25</td>
-                    <td>25</td>
-                    <td>25</td>
+                    <td>${article.title}</td>
+                    <td>${article.author}</td>
+                    <td>${article.comment}</td>
+                    <td>${article.catalog}</td>
+                    <td>${article.date}</td>
                 </tr>
-                <tr>
-                    <td>Uma</td>
-                    <td>Pune</td>
-                    <td>67</td>
-                    <td>25</td>
-                    <td>25</td>
-                </tr>--%>
+                </c:forEach>
                 </tbody>
             </table>
         </div>
         <div>
             <ul class="pagination pagination-sm" style="float:right;padding-right: 15px;">
-            <li><a href="#">&laquo;</a></li>
-            <li><a class="disabled"href="#">1</a></li>
-            <li><a class="active"href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&raquo;</a></li>
+        <c:forEach begin="">
+            <li><a class="" href="">&laquo;上一页</a></li>
+            <li><a class="pagenum" href="">${pagenum+1}</a></li>
+            <li><a class="pagenum" href="">${pagenum+2}</a></li>
+            <li><a class="pagenum" href="">${pagenum+3}</a></li>
+            <li><a class="pagenum" href="">${pagenum+4}</a></li>
+            <li><a class="pagenum" href="">${pagenum+5}</a></li>
+            <li><a class="" href="">下一页&raquo;</a></li>
+        </c:forEach>
             </ul>
-            <div/>
         </div>
     </div>
 </div>

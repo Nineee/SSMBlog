@@ -14,6 +14,7 @@ CREATE TABLE `blog_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles ORDER BY id DESC limit 0,2;
 INSERT INTO `blog_user` (`username`,`password`,`age`,`sex`,`sign`,`headpic`,`address`,`browser`)
     VALUES
       ('739889702@qq.com','123',22,'男','Why are we alive?','images/head.png','江苏',830);

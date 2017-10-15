@@ -5,7 +5,7 @@
     <meta charset="gb2312">
     <title>www.Sharefree.co</title>
     <link href="css/styles.css" rel="stylesheet">
-    <script type="text/javascript" src="/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/manage/assets/js/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="js/modernizr.js"></script>
     <![endif]-->

@@ -15,19 +15,19 @@
         <result property="picture" column="picture"></result>
     </resultMap>
 
-    <!--/*主页预加载查找文章*/-->
+    <!--/*主页预加载查找最新发布的两个文章*/-->
     <select id="findAllArticles" resultMap="articlesList">
-        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles limit 0,2;
+        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles ORDER BY id DESC limit 0,2;
     </select>
 
     <!--显示所有文章js进行分页-->
     <select id="findArticlesByPageNum" resultMap="articlesList">
-        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles;
+        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles ORDER BY id DESC;
     </select>
 
     <!--根据目录显示文章-->
     <select id="findArticlesByCataLog" parameterType="String" resultMap="articlesList">
-        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles WHERE catalog=#{catalog};
+        SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles WHERE catalog=#{catalog} ORDER BY id DESC;
     </select>
 
     <!--插入文章数据 （默认返回useGeneratedKeys，keyProperty返回文章的id）-->

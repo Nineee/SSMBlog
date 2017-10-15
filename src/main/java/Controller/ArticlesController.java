@@ -18,7 +18,7 @@ public class ArticlesController {
 
     @Autowired
     private ArticlesService articlesService;
-    /*主页预加载显示前两条文章*/
+    /*主页预加载显示最新发布的前两条文章*/
     @RequestMapping(value = "/load")
     @ResponseBody
     public List<Articles> showArticle(){
@@ -47,7 +47,7 @@ public class ArticlesController {
         return articlesByCataLog;
     }
 
-    /*--------------------------后台请求--------------------------------------*/
+    /*--------------------------后台管理界面请求--------------------------------------*/
     /*写文章页面提交的数据*/
     @RequestMapping(value = "/upload")
     @ResponseBody

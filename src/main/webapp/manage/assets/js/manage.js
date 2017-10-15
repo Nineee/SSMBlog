@@ -10,7 +10,7 @@ function getDateTime(date) {    //date为js中Date数据类型
 }
 
 /*预加载请求所以文章*/
-$(function () {
+/*$(function () {
     var articles = document.getElementById("articles");
     $.ajax({
         type: "POST",
@@ -19,12 +19,12 @@ $(function () {
         success: function (dataB) {
             var str = "";
             console.info(new Date(dataB[0].date));
-            for(var i=0;i<dataB.length;i++){
+            for(var i=0;i<8;i++){
                 str += "<tr>"+
                     "<td>"+dataB[i].title+"</td>"+
                     "<td>"+dataB[i].author+"</td>"+
                     "<td>"+dataB[i].comment+"</td>"+
-                    "<td>"+dataB[i].title+"</td>"+
+                    "<td>"+dataB[i].catalog+"</td>"+
                     "<td>"+getDateTime(new Date(dataB[i].date))+"</td>"+
                      "</tr>";
             }
@@ -34,4 +34,32 @@ $(function () {
             alert("查询失败！")
         }
     })
+})*/
+
+$(function () {
+    $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        url:"/pageNum.do",
+        data:{
+            pagenum:1
+        },
+        success: function (dataB) {
+
+        },
+        error:function () {
+            alert("查询失败！")
+        }
+    })
 })
+
+
+
+
+
+function pagenum(){
+    $('.pagenum').click(function () {
+       var pagenum =  document.getElementsByClassName("pagenum")
+           console.info( $('.pagenum').text());
+    })
+}
