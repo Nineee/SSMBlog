@@ -42,10 +42,10 @@ $(function () {
         dataType: "JSON",
         url:"/pageNum.do",
         data:{
-            pagenum:1
+          pagenum:pagenum
         },
-        success: function (dataB) {
-
+        success: function () {
+            return "forward:/manage/manage.jsp";
         },
         error:function () {
             alert("查询失败！")
@@ -53,13 +53,16 @@ $(function () {
     })
 })
 
+function pagenum1() {
+    
+}
 
+function pagenum2() {
 
+}
+function pagenum3() {
 
+}
+function pagenum4() {
 
-function pagenum(){
-    $('.pagenum').click(function () {
-       var pagenum =  document.getElementsByClassName("pagenum")
-           console.info( $('.pagenum').text());
-    })
 }

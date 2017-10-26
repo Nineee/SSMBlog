@@ -159,7 +159,7 @@
                 </tr>
                 </thead>
                 <tbody id="articles">
-                <c:forEach>
+                <c:forEach varStatus="stat" items="${articles}" var="article" >
                 <tr>
                     <td>${article.title}</td>
                     <td>${article.author}</td>
@@ -173,21 +173,21 @@
         </div>
         <div>
             <ul class="pagination pagination-sm" style="float:right;padding-right: 15px;">
-        <c:forEach begin="">
+
             <li><a class="" href="">&laquo;上一页</a></li>
-            <li><a class="pagenum" href="">${pagenum+1}</a></li>
-            <li><a class="pagenum" href="">${pagenum+2}</a></li>
-            <li><a class="pagenum" href="">${pagenum+3}</a></li>
-            <li><a class="pagenum" href="">${pagenum+4}</a></li>
-            <li><a class="pagenum" href="">${pagenum+5}</a></li>
+                <li><a href="?pagenum=${articlesPage.pagenum}">${articlesPage.pagenum}</a></li>
+                <li><a href="?pagenum=${articlesPage.pagenum+1}">${articlesPage.pagenum+1}</a></li>
+                <li><a href="?pagenum=${articlesPage.pagenum+2}">${articlesPage.pagenum+2}</a></li>
+                <li><a href="?pagenum=${articlesPage.pagenum+3}">${articlesPage.pagenum+3}</a></li>
             <li><a class="" href="">下一页&raquo;</a></li>
-        </c:forEach>
             </ul>
         </div>
     </div>
 </div>
 
-
+<script>
+    var pagenum="${sessionScope.articlesPage.pagenum}";
+</script>
 
 <script src="assets/js/manage.js"></script>
 <!--[if lt IE 9]>
