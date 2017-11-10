@@ -96,7 +96,7 @@ INSERT INTO `blog_articles` (`title`,`author`,`content`,`catalog`,`tag`,`comment
     'PHP','PHP','还不错哦','2017-10-03','images/php.png');
 
 SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles WHERE catalog="c++" limit 0,2;
-
+SELECT id,title,content,author,catalog,tag,comment,date,picture FROM blog_articles ORDER BY id desc limit 8,16;
 /*目录表*/
 DROP TABLE IF EXISTS `blog_catalog`;
 CREATE TABLE `blog_catalog` (

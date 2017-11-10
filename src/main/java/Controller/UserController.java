@@ -27,10 +27,11 @@ public class UserController {
     public String login(User user,HttpServletResponse response,HttpServletRequest request){
         System.out.println("前台提交的数据："+user);
         response.setCharacterEncoding("UTF-8");
-            String password= user.getPassword();
+        HttpSession session = request.getSession();
+        String password= user.getPassword();
             User u = userService.findPwdByUsername(user.getUsername());
             if (u.getPassword().equals(password)){
-                HttpSession session = request.getSession(); //设置用户名到session，管理界面方便去取
+                //设置用户名到session，管理界面方便去取
                 session.setAttribute("username",user.getUsername());
                 session.setMaxInactiveInterval(1440*60);
                 return "redirect:/manage/manage.jsp";

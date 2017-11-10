@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ page isELIgnored ="false" %>
 <html class="no-js">
 <head>
 <meta charset="utf-8">
@@ -158,36 +159,23 @@
                     <th>创建日期</th>
                 </tr>
                 </thead>
-                <tbody id="articles">
-                <c:forEach varStatus="stat" items="${articles}" var="article" >
-                <tr>
-                    <td>${article.title}</td>
-                    <td>${article.author}</td>
-                    <td>${article.comment}</td>
-                    <td>${article.catalog}</td>
-                    <td>${article.date}</td>
-                </tr>
-                </c:forEach>
-                </tbody>
             </table>
+                <table id="articles" class="table table-striped">
+
+                </table>
         </div>
         <div>
             <ul class="pagination pagination-sm" style="float:right;padding-right: 15px;">
-
-            <li><a class="" href="">&laquo;上一页</a></li>
-                <li><a href="?pagenum=${articlesPage.pagenum}">${articlesPage.pagenum}</a></li>
-                <li><a href="?pagenum=${articlesPage.pagenum+1}">${articlesPage.pagenum+1}</a></li>
-                <li><a href="?pagenum=${articlesPage.pagenum+2}">${articlesPage.pagenum+2}</a></li>
-                <li><a href="?pagenum=${articlesPage.pagenum+3}">${articlesPage.pagenum+3}</a></li>
-            <li><a class="" href="">下一页&raquo;</a></li>
+            <li><a class="" href="javascript:pageup()">&laquo;上一页</a></li>
+                <li><a id="pagenum1" href="?pagenum=1">1</a></li>
+                <li><a id="pagenum2" href="?pagenum=2">2</a></li>
+                <li><a id="pagenum3" href="?pagenum=3">3</a></li>
+                <li><a id="pagenum4" href="?pagenum=4">4</a></li>
+            <li><a class="" href="javascript:pagedown()">下一页&raquo;</a></li>
             </ul>
         </div>
     </div>
 </div>
-
-<script>
-    var pagenum="${sessionScope.articlesPage.pagenum}";
-</script>
 
 <script src="assets/js/manage.js"></script>
 <!--[if lt IE 9]>

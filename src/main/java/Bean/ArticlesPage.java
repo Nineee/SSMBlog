@@ -20,6 +20,11 @@ public class ArticlesPage {
         this.articles = articles;
     }
 
+    public ArticlesPage(int minpage, int maxpage) {
+        this.minpage = minpage;
+        this.maxpage = maxpage;
+    }
+
     public ArticlesPage() {
     }
 

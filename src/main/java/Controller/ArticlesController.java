@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -90,21 +91,23 @@ public class ArticlesController {
     /*编辑文章界面*/
     @ResponseBody
     @RequestMapping(value = "pageNum")
-    public String showArticles(int pagenum,HttpServletRequest request){
+    public List<Articles> showArticles(int pagenum,HttpServletRequest request){
         System.out.println("后台接收到的pagenum:"+pagenum);
-        List<Articles> allArticles = articlesService.findAllArticles();
+       /* List<Articles> allArticles = articlesService.findAllArticles();
         int pagetimes;
        if(allArticles.size()%8==0){
            pagetimes=allArticles.size()/8;
        }else {
            pagetimes=allArticles.size()/8+1;
-       }
-        ArticlesPage articlesPage = new ArticlesPage(pagenum,(pagenum-1)*8,pagenum*8,pagetimes,allArticles);
+       }*/
+        ArticlesPage articlesPage = new ArticlesPage((pagenum-1)*8,pagenum*8);
         List<Articles> articles = articlesService.ShowArticlesByPageNum(articlesPage);
         System.out.println("分页内容为："+articles);
-        HttpSession session = request.getSession();
+
+        return articles;
+        /*HttpSession session = request.getSession();
         session.setAttribute("articles",articles);
         session.setAttribute("articlesPage",articlesPage);
-        return "forward:/manage/manage.jsp";
+        return "forward:/manage/manage.jsp";*/
     }
 }
