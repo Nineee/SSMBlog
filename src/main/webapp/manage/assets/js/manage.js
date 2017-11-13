@@ -39,27 +39,28 @@ function getDateTime(date) {    //date为js中Date数据类型
 })*/
 
 /*获取当前页面www.sharefree.com?pagenum=后面传递的参数*/
-function getQueryString(name) {
+/*function getQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
     if (r != null) return unescape(r[2]);
     return null;
-}
+}*/
 
 /*预加载和点击页码文章显示*/
 $(function () {
-    var pagenum = getQueryString("pagenum");
+/*    var pagenum = getQueryString("pagenum");
     if(pagenum=="" || pagenum==null || "undefined" == typeof pagenum){
         pagenum=1;
+
     }else {
         pagenum=getQueryString("pagenum");
-    }
+    }*/
     $.ajax({
         type: "POST",
         dataType: "JSON",
         url:"/pageNum.do",
         data:{
-          pagenum:pagenum
+          pagenum:1
         },
         success: function (data) {
             console.info(data)
@@ -89,19 +90,16 @@ function pagedown() {
     $("#pagenum2").text(parseInt(document.getElementById("pagenum2").innerHTML)+1);
     $("#pagenum3").text(parseInt(document.getElementById("pagenum3").innerHTML)+1);
     $("#pagenum4").text(parseInt(document.getElementById("pagenum4").innerHTML)+1);
-    $('#pagenum1').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum1").innerHTML)+1));
-    $('#pagenum2').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum2").innerHTML)+1));
-    $('#pagenum3').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum3").innerHTML)+1));
-    $('#pagenum4').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum4").innerHTML)+1));
-    var pagenum = getQueryString("pagenum");
+    /*var pagenum = getQueryString("pagenum");
     if(pagenum=="" || pagenum==null || "undefined" == typeof pagenum){
         pagenum=1;
     }else {
         pagenum=parseInt(getQueryString("pagenum"))+1;
-    }
+    }*/
     $.ajax({
         type: "POST",
         dataType: "JSON",
+        async:false,
         url:"/pageNum.do",
         data:{
             pagenum:pagenum
@@ -131,10 +129,6 @@ function pageup() {
     $("#pagenum2").text(parseInt(document.getElementById("pagenum2").innerHTML)-1);
     $("#pagenum3").text(parseInt(document.getElementById("pagenum3").innerHTML)-1);
     $("#pagenum4").text(parseInt(document.getElementById("pagenum4").innerHTML)-1);
-    $('#pagenum1').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum1").innerHTML)-1));
-    $('#pagenum2').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum2").innerHTML)-1));
-    $('#pagenum3').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum3").innerHTML)-1));
-    $('#pagenum4').attr('href','?pagenum='+(parseInt(document.getElementById("pagenum4").innerHTML)-1));
     var pagenum = getQueryString("pagenum");
     if(pagenum=="" || pagenum==null || "undefined" == typeof pagenum){
         pagenum=1;
@@ -143,6 +137,7 @@ function pageup() {
     }
     $.ajax({
         type: "POST",
+        async:false,
         dataType: "JSON",
         url:"/pageNum.do",
         data:{
@@ -166,4 +161,66 @@ function pageup() {
         }
     })
 }
+
+/*文章页码点击按钮获取数据*/
+$(".pagenum").click(function () {
+    var id =$(this).attr("id");
+    var pagenum =  parseInt(document.getElementById(id).innerHTML)
+    var name =$(this).attr("name");
+    alert(name)
+    $("#id").attr("name","true")
+    $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        async:false,
+        url:"/pageNum.do",
+        data:{
+            pagenum:pagenum
+        },
+        success: function (data) {
+            console.info(data)
+            $("#articles").html("")
+            for (var i=0;i<data.length;i++){
+                $("#articles").append(
+                    '<tr><td>'+data[i].title+'</td>'+
+                    '<td>'+data[i].author+'</td>'+
+                    '<td>'+data[i].comment+'</td>'+
+                    '<td>'+data[i].catalog+'</td>'+
+                    '<td>'+getDateTime(new Date(data[i].date))+'</td></tr>'
+                );
+            }
+        },
+        error:function () {
+            alert("no data")
+        }
+    })
+})
+/*function pagenum() {
+
+        $.ajax({
+            type: "POST",
+            dataType: "JSON",
+            url:"/pageNum.do",
+            data:{
+                pagenum:pagenum
+            },
+            success: function (data) {
+                console.info(data)
+                $("#articles").html("")
+                for (var i=0;i<data.length;i++){
+                    $("#articles").append(
+                        '<tr><td>'+data[i].title+'</td>'+
+                        '<td>'+data[i].author+'</td>'+
+                        '<td>'+data[i].comment+'</td>'+
+                        '<td>'+data[i].catalog+'</td>'+
+                        '<td>'+getDateTime(new Date(data[i].date))+'</td></tr>'
+                    );
+                }
+            },
+            error:function () {
+                alert("no data")
+            }
+        })
+
+}*/
 

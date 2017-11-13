@@ -167,10 +167,10 @@
         <div>
             <ul class="pagination pagination-sm" style="float:right;padding-right: 15px;">
             <li><a class="" href="javascript:pageup()">&laquo;上一页</a></li>
-                <li><a id="pagenum1" href="?pagenum=1">1</a></li>
-                <li><a id="pagenum2" href="?pagenum=2">2</a></li>
-                <li><a id="pagenum3" href="?pagenum=3">3</a></li>
-                <li><a id="pagenum4" href="?pagenum=4">4</a></li>
+                <li><a class="pagenum" name="false" id="pagenum1" href="javascript:;" >1</a></li>
+                <li><a class="pagenum" name="false" id="pagenum2" href="javascript:;" >2</a></li>
+                <li><a class="pagenum" name="true" id="pagenum3" href="javascript:;" >3</a></li>
+                <li><a class="pagenum" name="false" id="pagenum4" href="javascript:;" >4</a></li>
             <li><a class="" href="javascript:pagedown()">下一页&raquo;</a></li>
             </ul>
         </div>

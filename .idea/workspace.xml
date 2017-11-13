@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbafd18b-9c99-4267-9549-b9525b1cd5e2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bean/ArticlesPage.java" afterPath="$PROJECT_DIR$/src/main/java/Bean/ArticlesPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/blog.sql" afterPath="$PROJECT_DIR$/src/main/resources/blog.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js" afterPath="$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/manage/manage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/manage/manage.jsp" />
@@ -63,17 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2200">
-              <caret line="102" column="61" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticlesDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ArticlesDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="53" />
+              <caret line="102" column="67" lean-forward="false" selection-start-line="102" selection-start-column="67" selection-end-line="102" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -82,18 +70,8 @@
       <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/manage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4225">
-              <caret line="169" column="35" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="4275">
+              <caret line="171" column="49" lean-forward="false" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -102,8 +80,58 @@
       <file leaf-file-name="manage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="687">
+              <caret line="191" column="10" lean-forward="false" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TweenLite.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login/js/TweenLite.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="11" column="12144" lean-forward="false" selection-start-line="11" selection-start-column="12144" selection-end-line="11" selection-end-column="12144" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo-1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login/js/demo-1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3500">
+              <caret line="140" column="11" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/main/catalog.jsp">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,47 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticlesMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="39" column="123" lean-forward="false" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="123" />
-              <folding>
-                <marker date="1508225220379" expanded="true" signature="875:984" ph="SELECT id,ti... " />
-                <marker date="1508225220379" expanded="true" signature="1092:1191" ph="SELECT id,ti... " />
-                <marker date="1508225220379" expanded="true" signature="1324:1448" ph="SELECT id,ti... " />
-                <marker date="1508225220379" expanded="true" signature="1634:1802" ph="insert into blog_articles... " />
-                <marker date="1508225220379" expanded="true" signature="1948:2075" ph="SELECT id,ti... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ArticlesService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="400">
               <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticlesServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1175">
-              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2450">
-              <caret line="98" column="82" lean-forward="false" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -204,6 +196,8 @@
       <find>laolao</find>
       <find>main.js</find>
       <find>manage</find>
+      <find>\/\*时间处理方法\*\/\n\nfunction getDateTime\(date\) \{    \/\/date为js中Date数据类型\n    var year \= date\.getFullYear\(\)\;\n    var month \= date\.getMonth\(\) \+ 1\;\n    var day \= date\.getDate\(\)\;\n    var hh \= date\.getHours\(\)\;\n    var mm \= date\.getMinutes\(\)\;\n    var ss \= date\.getSeconds\(\)\;\n    return year \+ \&quot;\-\&quot; \+ month \+ \&quot;\-\&quot; \+ day \+ \&quot; \&quot; \+ hh \+ \&quot;\:\&quot; \+ mm \+ \&quot;\:\&quot; \+ ss\;\n\}\n\n\n\/\*预加载请求所以文章\*\/\n\/\*\$\(function \(\) \{\n    var articles \= document\.getElementById\(\&quot;articles\&quot;\)\;\n    \$\.ajax\(\{\n        type\: \&quot;POST\&quot;\,\n        dataType\: \&quot;JSON\&quot;\,\n        url\:\&quot;\/page\.do\&quot;\,\n        success\: function \(dataB\) \{\n            var str \= \&quot;\&quot;\;\n            console\.info\(new Date\(dataB\[0\]\.date\)\)\;\n            for\(var i\=0\;i\&lt;8\;i\+\+\)\{\n                str \+\= \&quot;\&lt;tr\&gt;\&quot;\+\n                    \&quot;\&lt;td\&gt;\&quot;\+dataB\[i\]\.title\+\&quot;\&lt;\/td\&gt;\&quot;\+\n                    \&quot;\&lt;td\&gt;\&quot;\+dataB\[i\]\.author\+\&quot;\&lt;\/td\&gt;\&quot;\+\n                    \&quot;\&lt;td\&gt;\&quot;\+dataB\[i\]\.comment\+\&quot;\&lt;\/td\&gt;\&quot;\+\n                    \&quot;\&lt;td\&gt;\&quot;\+dataB\[i\]\.catalog\+\&quot;\&lt;\/td\&gt;\&quot;\+\n                    \&quot;\&lt;td\&gt;\&quot;\+getDateTime\(new Date\(dataB\[i\]\.date\)\)\+\&quot;\&lt;\/td\&gt;\&quot;\+\n                     \&quot;\&lt;\/tr\&gt;\&quot;\;\n            \}\n            articles\.innerHTML \= str\;\n        \}\,\n        error\:function \(\) \{\n            alert\(\&quot;查询失败\！\&quot;\)\n        \}\n    \}\)\n\}\)\*\/\n\n\/\*获取当前页面www\.sharefree\.com\?pagenum\=后面传递的参数\*\/\n\/\*function getQueryString\(name\) \{\n    var reg \= new RegExp\(\&quot;\(\^\|\&amp;\)\&quot; \+ name \+ \&quot;\=\(\[\^\&amp;\]\*\)\(\&amp;\|\$\)\&quot;\, \&quot;i\&quot;\)\;\n    var r \= window\.location\.search\.substr\(1\)\.match\(reg\)\;\n    if \(r \!\= null\) return unescape\(r\[2\]\)\;\n    return null\;\n\}\*\/\n\n\/\*预加载和点击页码文章显示\*\/\n\$\(function \(\) \{\n\/\*    var pagenum \= getQueryString\(\&quot;pagenum\&quot;\)\;\n    if\(pagenum\=\=\&quot;\&quot; \|\| pagenum\=\=null \|\| \&quot;undefined\&quot; \=\= typeof pagenum\)\{\n        pagenum\=1\;\n\n    \}else \{\n        pagenum\=getQueryString\(\&quot;pagenum\&quot;\)\;\n    \}\*\/\n    \$\.ajax\(\{\n        type\: \&quot;POST\&quot;\,\n        dataType\: \&quot;JSON\&quot;\,\n        url\:\&quot;\/pageNum\.do\&quot;\,\n        data\:\{\n          pagenum\:1\n        \}\,\n        success\: function \(data\) \{\n            console\.info\(data\)\n            \$\(\&quot;\#articles\&quot;\)\.html\(\&quot;\&quot;\)\n            for \(var i\=0\;i\&lt;data\.length\;i\+\+\)\{\n                \$\(\&quot;\#articles\&quot;\)\.append\(\n                \'\&lt;tr\&gt;\&lt;td\&gt;\'\+data\[i\]\.title\+\'\&lt;\/td\&gt;\'\+\n                \'\&lt;td\&gt;\'\+data\[i\]\.author\+\'\&lt;\/td\&gt;\'\+\n                \'\&lt;td\&gt;\'\+data\[i\]\.comment\+\'\&lt;\/td\&gt;\'\+\n                \'\&lt;td\&gt;\'\+data\[i\]\.catalog\+\'\&lt;\/td\&gt;\'\+\n                \'\&lt;td\&gt;\'\+getDateTime\(new Date\(data\[i\]\.date\)\)\+\'\&lt;\/td\&gt;\&lt;\/tr\&gt;\'\n                \)\;\n            \}\n        \}\,\n        error\:function \(\) \{\n            alert\(\&quot;no data\&quot;\)\n        \}\n    \}\)\n\n\n\n\}\)\n\n\/\*下一页文章显示\*\/\nfunction pagedown\(\) \{\n    \$\(\&quot;\#pagenum1\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum1\&quot;\)\.innerHTML\)\+1\)\;\n    \$\(\&quot;\#pagenum2\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum2\&quot;\)\.innerHTML\)\+1\)\;\n    \$\(\&quot;\#pagenum3\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum3\&quot;\)\.innerHTML\)\+1\)\;\n    \$\(\&quot;\#pagenum4\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum4\&quot;\)\.innerHTML\)\+1\)\;\n    \/\*var pagenum \= getQueryString\(\&quot;pagenum\&quot;\)\;\n    if\(pagenum\=\=\&quot;\&quot; \|\| pagenum\=\=null \|\| \&quot;undefined\&quot; \=\= typeof pagenum\)\{\n        pagenum\=1\;\n    \}else \{\n        pagenum\=parseInt\(getQueryString\(\&quot;pagenum\&quot;\)\)\+1\;\n    \}\*\/\n    \$\.ajax\(\{\n        type\: \&quot;POST\&quot;\,\n        dataType\: \&quot;JSON\&quot;\,\n        async\:false\,\n        url\:\&quot;\/pageNum\.do\&quot;\,\n        data\:\{\n            pagenum\:pagenum\n        \}\,\n        success\: function \(data\) \{\n            console\.info\(data\)\n            \$\(\&quot;\#articles\&quot;\)\.html\(\&quot;\&quot;\)\n            for \(var i\=0\;i\&lt;data\.length\;i\+\+\)\{\n                \$\(\&quot;\#articles\&quot;\)\.append\(\n                    \'\&lt;tr\&gt;\&lt;td\&gt;\'\+data\[i\]\.title\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.author\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.comment\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.catalog\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+getDateTime\(new Date\(data\[i\]\.date\)\)\+\'\&lt;\/td\&gt;\&lt;\/tr\&gt;\'\n                \)\;\n            \}\n        \}\,\n        error\:function \(\) \{\n            alert\(\&quot;no data\&quot;\)\n        \}\n    \}\)\n\}\n\n\/\*上一页文章显示\*\/\nfunction pageup\(\) \{\n    \$\(\&quot;\#pagenum1\&quot;\)\.text\(parseInt\(document\.getElementsByName\(\&quot;pagenum1\&quot;\)\.innerHTML\)\-1\)\;\n    \$\(\&quot;\#pagenum2\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum2\&quot;\)\.innerHTML\)\-1\)\;\n    \$\(\&quot;\#pagenum3\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum3\&quot;\)\.innerHTML\)\-1\)\;\n    \$\(\&quot;\#pagenum4\&quot;\)\.text\(parseInt\(document\.getElementById\(\&quot;pagenum4\&quot;\)\.innerHTML\)\-1\)\;\n    var pagenum \= getQueryString\(\&quot;pagenum\&quot;\)\;\n    if\(pagenum\=\=\&quot;\&quot; \|\| pagenum\=\=null \|\| \&quot;undefined\&quot; \=\= typeof pagenum\)\{\n        pagenum\=1\;\n    \}else \{\n        pagenum\=parseInt\(getQueryString\(\&quot;pagenum\&quot;\)\)\-1\;\n    \}\n    \$\.ajax\(\{\n        type\: \&quot;POST\&quot;\,\n        async\:false\,\n        dataType\: \&quot;JSON\&quot;\,\n        url\:\&quot;\/pageNum\.do\&quot;\,\n        data\:\{\n            pagenum\:pagenum\n        \}\,\n        success\: function \(data\) \{\n            console\.info\(data\)\n            \$\(\&quot;\#articles\&quot;\)\.html\(\&quot;\&quot;\)\n            for \(var i\=0\;i\&lt;data\.length\;i\+\+\)\{\n                \$\(\&quot;\#articles\&quot;\)\.append\(\n                    \'\&lt;tr\&gt;\&lt;td\&gt;\'\+data\[i\]\.title\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.author\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.comment\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.catalog\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+getDateTime\(new Date\(data\[i\]\.date\)\)\+\'\&lt;\/td\&gt;\&lt;\/tr\&gt;\'\n                \)\;\n            \}\n        \}\,\n        error\:function \(\) \{\n            alert\(\&quot;no data\&quot;\)\n        \}\n    \}\)\n\}\n\$\(\&quot;\.pagenum\&quot;\)\.click\(function \(\) \{\n    var id \=\$\(this\)\.attr\(\&quot;id\&quot;\)\;\n    var pagenum \=  parseInt\(document\.getElementById\(id\)\.innerHTML\)\n    \$\.ajax\(\{\n        type\: \&quot;POST\&quot;\,\n        dataType\: \&quot;JSON\&quot;\,\n        async\:false\,\n        url\:\&quot;\/pageNum\.do\&quot;\,\n        data\:\{\n            pagenum\:pagenum\n        \}\,\n        success\: function \(data\) \{\n            console\.info\(data\)\n            \$\(\&quot;\#articles\&quot;\)\.html\(\&quot;\&quot;\)\n            for \(var i\=0\;i\&lt;data\.length\;i\+\+\)\{\n                \$\(\&quot;\#articles\&quot;\)\.append\(\n                    \'\&lt;tr\&gt;\&lt;td\&gt;\'\+data\[i\]\.title\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.author\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.comment\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+data\[i\]\.catalog\+\'\&lt;\/td\&gt;\'\+\n                    \'\&lt;td\&gt;\'\+getDateTime\(new Date\(data\[i\]\.date\)\)\+\'\&lt;\/td\&gt;\&lt;\/tr\&gt;\'\n                \)\;\n            \}\n        \}\,\n        error\:function \(\) \{\n            alert\(\&quot;no data\&quot;\)\n        \}\n    \}\)\n\}\)\n\/\*function pagenum\(\) \{\n\n        \$\.ajax\(\{\n            type\: \&quot;POST\&quot;\,\n            dataType\: \&quot;JSON\&quot;\,\n            url\:\&quot;\/pageNum\.do\&quot;\,\n            data\:\{\n                pagenum\:pagenum\n            \}\,\n            success\: function \(data\) \{\n                console\.info\(data\)\n                \$\(\&quot;\#articles\&quot;\)\.html\(\&quot;\&quot;\)\n                for \(var i\=0\;i\&lt;data\.length\;i\+\+\)\{\n                    \$\(\&quot;\#articles\&quot;\)\.append\(\n                        \'\&lt;tr\&gt;\&lt;td\&gt;\'\+data\[i\]\.title\+\'\&lt;\/td\&gt;\'\+\n                        \'\&lt;td\&gt;\'\+data\[i\]\.author\+\'\&lt;\/td\&gt;\'\+\n                        \'\&lt;td\&gt;\'\+data\[i\]\.comment\+\'\&lt;\/td\&gt;\'\+\n                        \'\&lt;td\&gt;\'\+data\[i\]\.catalog\+\'\&lt;\/td\&gt;\'\+\n                        \'\&lt;td\&gt;\'\+getDateTime\(new Date\(data\[i\]\.date\)\)\+\'\&lt;\/td\&gt;\&lt;\/tr\&gt;\'\n                    \)\;\n                \}\n            \}\,\n            error\:function \(\) \{\n                alert\(\&quot;no data\&quot;\)\n            \}\n        \}\)\n\n\}\*\/\n\n</find>
+      <find>document.getElementById</find>
     </findStrings>
     <replaceStrings>
       <replace>••••••••••</replace>
@@ -211,6 +205,7 @@
       <replace>document.getElementById(&quot;article2&quot;).style.visibility=&quot;hidden&quot;;</replace>
       <replace>没有这么多哦！^_^</replace>
       <replace>picture</replace>
+      <replace>document.getElementByName</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -229,7 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/login/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ssm_db_book.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/ArticleController.java" />
@@ -275,10 +269,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jQuery公司组织结构图模板/index2.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/jQuery公司组织结构图模板/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/manage/manage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/main/dsa/aaa.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/blog.sql" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/main/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/manage/manage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js" />
       </list>
     </option>
@@ -345,9 +340,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
-    <option name="y" value="176" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1612" />
     <option name="height" value="850" />
   </component>
@@ -445,9 +440,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -566,7 +562,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -581,19 +576,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\css" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\js" />
+      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\WEB-INF\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\js" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\css" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\images" />
       <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\main\css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\css" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage\assets\js" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\WEB-INF\lib" />
-      <recent name="D:\WorkSpace\GitHub\blogdemo1\src\main\webapp\manage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -845,7 +840,9 @@
       <workItem from="1510104969655" duration="27000" />
       <workItem from="1510194504810" duration="15248000" />
       <workItem from="1510222754343" duration="34000" />
-      <workItem from="1510275824456" duration="55000" />
+      <workItem from="1510275824456" duration="1440000" />
+      <workItem from="1510283413350" duration="12063000" />
+      <workItem from="1510558977398" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="2017-10-02">
       <created>1506931387270</created>
@@ -869,7 +866,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332186000" />
+    <option name="totallyTimeSpent" value="345671000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -881,12 +878,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="176" width="1612" height="850" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2872629" sideWeight="0.5025707" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35230353" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23518041" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23393317" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35282776" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -899,11 +896,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25983146" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33739838" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18621135" sideWeight="0.53894734" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19023137" sideWeight="0.53894734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1773779" sideWeight="0.46105263" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -914,7 +911,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3590786" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47289973" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22357723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -940,6 +937,61 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="99" column="54" lean-forward="false" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4450">
+          <caret line="178" column="60" lean-forward="false" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="39" column="123" lean-forward="false" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="123" />
+          <folding>
+            <marker date="1508225220379" expanded="true" signature="875:984" ph="SELECT id,ti... " />
+            <marker date="1508225220379" expanded="true" signature="1092:1191" ph="SELECT id,ti... " />
+            <marker date="1508225220379" expanded="true" signature="1324:1448" ph="SELECT id,ti... " />
+            <marker date="1508225220379" expanded="true" signature="1634:1802" ph="insert into blog_articles... " />
+            <marker date="1508225220379" expanded="true" signature="1948:2075" ph="SELECT id,ti... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/dsa/aaa.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2200">
@@ -1136,14 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2450">
-          <caret line="98" column="82" lean-forward="false" selection-start-line="98" selection-start-column="69" selection-end-line="98" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/ArticlesMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -1160,7 +1204,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
+        <state relative-caret-position="750">
           <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
           <folding />
         </state>
@@ -1176,16 +1220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Service/ArticlesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="400">
           <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="102" column="61" lean-forward="false" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1198,26 +1234,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4225">
-          <caret line="169" column="35" lean-forward="false" selection-start-line="169" selection-start-column="27" selection-end-line="169" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/dsa/aaa.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/main/catalog.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="99" column="54" lean-forward="true" selection-start-line="99" selection-start-column="54" selection-end-line="99" selection-end-column="54" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/main/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="-250">
           <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ArticlesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2200">
+          <caret line="102" column="67" lean-forward="false" selection-start-line="102" selection-start-column="67" selection-end-line="102" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/blog.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3500">
+          <caret line="140" column="11" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login/js/TweenLite.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="11" column="12144" lean-forward="false" selection-start-line="11" selection-start-column="12144" selection-end-line="11" selection-end-column="12144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login/js/demo-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="171" column="49" lean-forward="false" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manage/assets/js/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="191" column="10" lean-forward="false" selection-start-line="191" selection-start-column="10" selection-end-line="191" selection-end-column="10" />
           <folding />
         </state>
       </provider>

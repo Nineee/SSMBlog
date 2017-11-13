@@ -100,7 +100,7 @@ public class ArticlesController {
        }else {
            pagetimes=allArticles.size()/8+1;
        }*/
-        ArticlesPage articlesPage = new ArticlesPage((pagenum-1)*8,pagenum*8);
+        ArticlesPage articlesPage = new ArticlesPage((pagenum-1)*8,8);
         List<Articles> articles = articlesService.ShowArticlesByPageNum(articlesPage);
         System.out.println("分页内容为："+articles);
 
