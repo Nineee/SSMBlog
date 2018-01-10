@@ -169,7 +169,7 @@
             <li><a class="" href="javascript:pageup()">&laquo;上一页</a></li>
                 <li><a class="pagenum" name="false" id="pagenum1" href="javascript:;" >1</a></li>
                 <li><a class="pagenum" name="false" id="pagenum2" href="javascript:;" >2</a></li>
-                <li><a class="pagenum" name="true" id="pagenum3" href="javascript:;" >3</a></li>
+                <li><a class="pagenum" name="false" id="pagenum3" href="javascript:;" >3</a></li>
                 <li><a class="pagenum" name="false" id="pagenum4" href="javascript:;" >4</a></li>
             <li><a class="" href="javascript:pagedown()">下一页&raquo;</a></li>
             </ul>

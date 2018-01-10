@@ -125,16 +125,19 @@ function pagedown() {
 
 /*上一页文章显示*/
 function pageup() {
+
     $("#pagenum1").text(parseInt(document.getElementById("pagenum1").innerHTML)-1);
     $("#pagenum2").text(parseInt(document.getElementById("pagenum2").innerHTML)-1);
     $("#pagenum3").text(parseInt(document.getElementById("pagenum3").innerHTML)-1);
     $("#pagenum4").text(parseInt(document.getElementById("pagenum4").innerHTML)-1);
     var pagenum = getQueryString("pagenum");
+    alert(pagenum);
     if(pagenum=="" || pagenum==null || "undefined" == typeof pagenum){
         pagenum=1;
     }else {
         pagenum=parseInt(getQueryString("pagenum"))-1;
     }
+
     $.ajax({
         type: "POST",
         async:false,
@@ -165,10 +168,17 @@ function pageup() {
 /*文章页码点击按钮获取数据*/
 $(".pagenum").click(function () {
     var id =$(this).attr("id");
-    var pagenum =  parseInt(document.getElementById(id).innerHTML)
-    var name =$(this).attr("name");
-    alert(name)
-    $("#id").attr("name","true")
+    var idother =parseInt($(this).attr("id"));
+    var pagenum =  parseInt(document.getElementById(id).innerHTML);
+    $(this).attr("name","true");
+    document.getElementById(idother+1).attr("name","false");
+    document.getElementById(idother+2).attr("name","false");
+    document.getElementById(idother+3).attr("name","false");
+    document.getElementById(idother+4).attr("name","false");
+    document.getElementById(idother-1).attr("name","false");
+    document.getElementById(idother-2).attr("name","false");
+    document.getElementById(idother-3).attr("name","false");
+    document.getElementById(idother-4).attr("name","false");
     $.ajax({
         type: "POST",
         dataType: "JSON",
